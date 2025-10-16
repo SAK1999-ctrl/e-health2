@@ -1,0 +1,12 @@
+/* Card component styles */
+.card-service {
+  @apply rounded-num-24 overflow-hidden flex flex-col items-center justify-center p-6 gap-4 transition-transform hover:scale-105;
+}
+
+.card-challenge {
+  @apply w-num-231 text-center;
+}
+
+.card-challenge-icon {
+  @apply w-[50px] h-[50px] object-cover mx-auto mb-4;
+}

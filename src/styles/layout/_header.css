@@ -1,0 +1,12 @@
+/* Header and navigation styles */
+.navbar {
+  @apply w-full relative h-[57px] text-center text-lg text-white font-raleway;
+}
+
+.nav-menu {
+  @apply rounded-[80px] bg-gray-100 overflow-hidden flex items-center justify-center py-4 px-8;
+}
+
+.nav-item {
+  @apply leading-[25px] font-medium hover:text-cornflowerblue transition-colors cursor-pointer;
+}

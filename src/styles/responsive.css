@@ -1,0 +1,1455 @@
+/* Responsive Design for iSenseHUB Frontend */
+/* This file provides comprehensive responsive styles for all screen sizes */
+
+/* Base responsive utilities */
+@layer utilities {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .section {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Extra Small Devices (phones, 320px and up) */
+@media (min-width: 320px) {
+  .xs\:text-xs { font-size: 0.75rem; }
+  .xs\:text-sm { font-size: 0.875rem; }
+  .xs\:text-base { font-size: 1rem; }
+  .xs\:text-lg { font-size: 1.125rem; }
+  .xs\:text-xl { font-size: 1.25rem; }
+  .xs\:text-2xl { font-size: 1.5rem; }
+  .xs\:px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+  .xs\:px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .xs\:px-4 { padding-left: 1rem; padding-right: 1rem; }
+  .xs\:py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+  .xs\:py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .xs\:py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+  .xs\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+  .xs\:py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  .xs\:py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  .xs\:py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+  .xs\:gap-1 { gap: 0.25rem; }
+  .xs\:gap-2 { gap: 0.5rem; }
+  .xs\:gap-3 { gap: 0.75rem; }
+  .xs\:gap-4 { gap: 1rem; }
+  .xs\:gap-5 { gap: 1.25rem; }
+  .xs\:space-x-2 > * + * { margin-left: 0.5rem; }
+  .xs\:space-x-3 > * + * { margin-left: 0.75rem; }
+  .xs\:space-x-4 > * + * { margin-left: 1rem; }
+  .xs\:space-y-1 > * + * { margin-top: 0.25rem; }
+  .xs\:space-y-2 > * + * { margin-top: 0.5rem; }
+  .xs\:space-y-3 > * + * { margin-top: 0.75rem; }
+  .xs\:space-y-4 > * + * { margin-top: 1rem; }
+  .xs\:space-y-5 > * + * { margin-top: 1.25rem; }
+  .xs\:mb-2 { margin-bottom: 0.5rem; }
+  .xs\:mb-3 { margin-bottom: 0.75rem; }
+  .xs\:mb-4 { margin-bottom: 1rem; }
+  .xs\:mb-5 { margin-bottom: 1.25rem; }
+  .xs\:mb-6 { margin-bottom: 1.5rem; }
+  .xs\:mb-8 { margin-bottom: 2rem; }
+  .xs\:w-5 { width: 1.25rem; }
+  .xs\:h-5 { height: 1.25rem; }
+  .xs\:w-6 { width: 1.5rem; }
+  .xs\:h-6 { height: 1.5rem; }
+  .xs\:w-7 { width: 1.75rem; }
+  .xs\:h-7 { height: 1.75rem; }
+  .xs\:w-8 { width: 2rem; }
+  .xs\:h-8 { height: 2rem; }
+  .xs\:max-w-sm { max-width: 24rem; }
+  .xs\:max-w-md { max-width: 28rem; }
+  .xs\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .xs\:rounded-2xl { border-radius: 1rem; }
+  .xs\:pt-3 { padding-top: 0.75rem; }
+  .xs\:pt-4 { padding-top: 1rem; }
+  .xs\:pt-5 { padding-top: 1.25rem; }
+  .xs\:pt-6 { padding-top: 1.5rem; }
+  .xs\:pt-8 { padding-top: 2rem; }
+  .xs\:mt-1 { margin-top: 0.25rem; }
+  .xs\:mt-2 { margin-top: 0.5rem; }
+  .xs\:leading-5 { line-height: 1.25rem; }
+  .xs\:leading-6 { line-height: 1.5rem; }
+  .xs\:leading-7 { line-height: 1.75rem; }
+  .xs\:leading-8 { line-height: 2rem; }
+  .xs\:tracking-\[2px\] { letter-spacing: 2px; }
+  .xs\:tracking-\[3px\] { letter-spacing: 3px; }
+  .xs\:tracking-\[-0\.5px\] { letter-spacing: -0.5px; }
+  .xs\:tracking-\[-0\.75px\] { letter-spacing: -0.75px; }
+}
+
+/* Small Devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .sm\:text-sm { font-size: 0.875rem; }
+  .sm\:text-base { font-size: 1rem; }
+  .sm\:px-4 { padding-left: 1rem; padding-right: 1rem; }
+  .sm\:py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .sm\:gap-2 { gap: 0.5rem; }
+  .sm\:space-y-2 > * + * { margin-top: 0.5rem; }
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .sm\:flex-row { flex-direction: row; }
+  .sm\:hidden { display: none; }
+  .sm\:block { display: block; }
+  .sm\:flex { display: flex; }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .md\:text-base { font-size: 1rem; }
+  .md\:text-lg { font-size: 1.125rem; }
+  .md\:text-xl { font-size: 1.25rem; }
+  .md\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .md\:py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+  .md\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+  .md\:gap-4 { gap: 1rem; }
+  .md\:space-y-4 > * + * { margin-top: 1rem; }
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .md\:flex-row { flex-direction: row; }
+  .md\:hidden { display: none; }
+  .md\:block { display: block; }
+  .md\:flex { display: flex; }
+  .md\:items-center { align-items: center; }
+  .md\:justify-center { justify-content: center; }
+  .md\:text-center { text-align: center; }
+  .md\:space-x-4 > * + * { margin-left: 1rem; }
+  .md\:space-x-6 > * + * { margin-left: 1.5rem; }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .lg\:text-lg { font-size: 1.125rem; }
+  .lg\:text-xl { font-size: 1.25rem; }
+  .lg\:text-2xl { font-size: 1.5rem; }
+  .lg\:text-3xl { font-size: 1.875rem; }
+  .lg\:text-4xl { font-size: 2.25rem; }
+  .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+  .lg\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+  .lg\:py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  .lg\:py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+  .lg\:py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+  .lg\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+  .lg\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+  .lg\:gap-6 { gap: 1.5rem; }
+  .lg\:gap-8 { gap: 2rem; }
+  .lg\:space-y-6 > * + * { margin-top: 1.5rem; }
+  .lg\:space-y-8 > * + * { margin-top: 2rem; }
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .lg\:grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+  .lg\:grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+  .lg\:flex-row { flex-direction: row; }
+  .lg\:hidden { display: none; }
+  .lg\:block { display: block; }
+  .lg\:flex { display: flex; }
+  .lg\:items-center { align-items: center; }
+  .lg\:justify-center { justify-content: center; }
+  .lg\:justify-between { justify-content: space-between; }
+  .lg\:text-center { text-align: center; }
+  .lg\:text-left { text-align: left; }
+  .lg\:space-x-6 > * + * { margin-left: 1.5rem; }
+  .lg\:space-x-8 > * + * { margin-left: 2rem; }
+  .lg\:w-auto { width: auto; }
+  .lg\:max-w-none { max-width: none; }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .xl\:text-xl { font-size: 1.25rem; }
+  .xl\:text-2xl { font-size: 1.5rem; }
+  .xl\:text-3xl { font-size: 1.875rem; }
+  .xl\:text-4xl { font-size: 2.25rem; }
+  .xl\:text-5xl { font-size: 3rem; }
+  .xl\:px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+  .xl\:py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+  .xl\:py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+  .xl\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+  .xl\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+  .xl\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+  .xl\:gap-8 { gap: 2rem; }
+  .xl\:gap-10 { gap: 2.5rem; }
+  .xl\:space-y-8 > * + * { margin-top: 2rem; }
+  .xl\:space-y-10 > * + * { margin-top: 2.5rem; }
+  .xl\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .xl\:grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+  .xl\:grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+  .xl\:hidden { display: none; }
+  .xl\:block { display: block; }
+  .xl\:flex { display: flex; }
+  .xl\:items-center { align-items: center; }
+  .xl\:justify-center { justify-content: center; }
+  .xl\:justify-between { justify-content: space-between; }
+  .xl\:text-center { text-align: center; }
+  .xl\:text-left { text-align: left; }
+  .xl\:space-x-8 > * + * { margin-left: 2rem; }
+  .xl\:space-x-10 > * + * { margin-left: 2.5rem; }
+}
+
+/* 2XL Devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .2xl\:text-2xl { font-size: 1.5rem; }
+  .2xl\:text-3xl { font-size: 1.875rem; }
+  .2xl\:text-4xl { font-size: 2.25rem; }
+  .2xl\:text-5xl { font-size: 3rem; }
+  .2xl\:text-6xl { font-size: 3.75rem; }
+  .2xl\:px-12 { padding-left: 3rem; padding-right: 3rem; }
+  .2xl\:py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .2xl\:py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+  .2xl\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+  .2xl\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+  .2xl\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+  .2xl\:py-32 { padding-top: 8rem; padding-bottom: 8rem; }
+  .2xl\:gap-10 { gap: 2.5rem; }
+  .2xl\:gap-12 { gap: 3rem; }
+  .2xl\:space-y-10 > * + * { margin-top: 2.5rem; }
+  .2xl\:space-y-12 > * + * { margin-top: 3rem; }
+  .2xl\:grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+  .2xl\:grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+  .2xl\:hidden { display: none; }
+  .2xl\:block { display: block; }
+  .2xl\:flex { display: flex; }
+  .2xl\:items-center { align-items: center; }
+  .2xl\:justify-center { justify-content: center; }
+  .2xl\:justify-between { justify-content: space-between; }
+  .2xl\:text-center { text-align: center; }
+  .2xl\:text-left { text-align: left; }
+  .2xl\:space-x-10 > * + * { margin-left: 2.5rem; }
+  .2xl\:space-x-12 > * + * { margin-left: 3rem; }
+}
+
+/* Container responsive breakpoints */
+@media (min-width: 320px) {
+  .container { max-width: 320px; }
+}
+
+@media (min-width: 576px) {
+  .container { max-width: 576px; }
+}
+
+@media (min-width: 768px) {
+  .container { max-width: 768px; }
+}
+
+@media (min-width: 992px) {
+  .container { max-width: 992px; }
+}
+
+@media (min-width: 1200px) {
+  .container { max-width: 1200px; }
+}
+
+@media (min-width: 1400px) {
+  .container { max-width: 1400px; }
+}
+
+/* Hero Section Responsive Styles */
+@media (max-width: 767px) {
+  .hero-title {
+    @apply text-2xl sm:text-3xl;
+  }
+  
+  .hero-subtitle {
+    @apply text-lg sm:text-xl;
+  }
+  
+  .hero-description {
+    @apply text-sm sm:text-base;
+  }
+  
+  .hero-cta-button {
+    @apply text-sm px-4 py-2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-title {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-2xl;
+  }
+  
+  .hero-description {
+    @apply text-base md:text-lg;
+  }
+  
+  .hero-cta-button {
+    @apply text-base px-6 py-3;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    @apply text-4xl lg:text-5xl;
+  }
+  
+  .hero-subtitle {
+    @apply text-2xl lg:text-3xl;
+  }
+  
+  .hero-description {
+    @apply text-lg lg:text-xl;
+  }
+  
+  .hero-cta-button {
+    @apply text-lg px-8 py-4;
+  }
+}
+
+/* Navigation Responsive Styles */
+@media (max-width: 767px) {
+  .nav-logo {
+    @apply h-8 w-auto;
+  }
+  
+  .nav-link {
+    @apply text-sm py-2;
+  }
+  
+  .nav-button {
+    @apply text-xs px-3 py-1.5;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-logo {
+    @apply h-10 w-auto;
+  }
+  
+  .nav-link {
+    @apply text-base py-2;
+  }
+  
+  .nav-button {
+    @apply text-sm px-4 py-2;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-logo {
+    @apply h-12 w-auto;
+  }
+  
+  .nav-link {
+    @apply text-base py-2;
+  }
+  
+  .nav-button {
+    @apply text-base px-5 py-2.5;
+  }
+}
+
+/* Pricing Section Responsive Styles */
+@media (max-width: 767px) {
+  .pricing-card {
+    @apply p-4 mb-4;
+  }
+  
+  .pricing-title {
+    @apply text-lg;
+  }
+  
+  .pricing-price {
+    @apply text-2xl;
+  }
+  
+  .pricing-features {
+    @apply text-sm;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .pricing-card {
+    @apply p-5 mb-6;
+  }
+  
+  .pricing-title {
+    @apply text-xl;
+  }
+  
+  .pricing-price {
+    @apply text-3xl;
+  }
+  
+  .pricing-features {
+    @apply text-base;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing-card {
+    @apply p-6 mb-8;
+  }
+  
+  .pricing-title {
+    @apply text-2xl;
+  }
+  
+  .pricing-price {
+    @apply text-4xl;
+  }
+  
+  .pricing-features {
+    @apply text-lg;
+  }
+}
+
+/* Contact Section Responsive Styles */
+/* Mobile First Approach for Contact Section */
+
+/* Extra Small Devices (phones, 320px and up) */
+@media (min-width: 320px) {
+  .contact-mobile {
+    @apply px-3 py-6;
+  }
+  
+  .contact-mobile-title {
+    @apply text-xl mb-6;
+  }
+  
+  .contact-mobile-subtitle {
+    @apply text-xs mb-3;
+  }
+  
+  .contact-mobile-card {
+    @apply max-w-xs p-2 rounded-xl;
+  }
+  
+  .contact-mobile-info {
+    @apply text-xs space-y-3;
+  }
+  
+  .contact-mobile-form {
+    @apply space-y-2;
+  }
+  
+  .contact-mobile-input {
+    @apply text-xs py-1;
+  }
+  
+  .contact-mobile-button {
+    @apply text-xs py-2 px-4;
+  }
+  
+  .contact-mobile-social {
+    @apply w-6 h-6;
+  }
+  
+  .contact-mobile-icon {
+    @apply w-3 h-3;
+  }
+}
+
+/* Small Devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .contact-sm {
+    @apply px-4 py-8;
+  }
+  
+  .contact-sm-title {
+    @apply text-2xl mb-8;
+  }
+  
+  .contact-sm-subtitle {
+    @apply text-sm mb-4;
+  }
+  
+  .contact-sm-card {
+    @apply max-w-sm p-3 rounded-2xl;
+  }
+  
+  .contact-sm-info {
+    @apply text-sm space-y-4;
+  }
+  
+  .contact-sm-form {
+    @apply space-y-3;
+  }
+  
+  .contact-sm-input {
+    @apply text-sm py-2;
+  }
+  
+  .contact-sm-button {
+    @apply text-sm py-3 px-6;
+  }
+  
+  .contact-sm-social {
+    @apply w-7 h-7;
+  }
+  
+  .contact-sm-icon {
+    @apply w-4 h-4;
+  }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .contact-tablet {
+    @apply px-6 py-10;
+  }
+  
+  .contact-tablet-title {
+    @apply text-3xl mb-10;
+  }
+  
+  .contact-tablet-subtitle {
+    @apply text-base mb-6;
+  }
+  
+  .contact-tablet-card {
+    @apply max-w-md p-4 rounded-3xl;
+  }
+  
+  .contact-tablet-info {
+    @apply text-base space-y-5;
+  }
+  
+  .contact-tablet-form {
+    @apply space-y-4;
+  }
+  
+  .contact-tablet-input {
+    @apply text-base py-3;
+  }
+  
+  .contact-tablet-button {
+    @apply text-base py-4 px-8;
+  }
+  
+  .contact-tablet-social {
+    @apply w-8 h-8;
+  }
+  
+  .contact-tablet-icon {
+    @apply w-5 h-5;
+  }
+}
+
+/* Large Devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .contact-desktop {
+    @apply px-8 py-12;
+  }
+  
+  .contact-desktop-title {
+    @apply text-4xl mb-12;
+  }
+  
+  .contact-desktop-subtitle {
+    @apply text-lg mb-8;
+  }
+  
+  .contact-desktop-card {
+    @apply max-w-lg p-5 rounded-4xl;
+  }
+  
+  .contact-desktop-info {
+    @apply text-lg space-y-6;
+  }
+  
+  .contact-desktop-form {
+    @apply space-y-5;
+  }
+  
+  .contact-desktop-input {
+    @apply text-lg py-4;
+  }
+  
+  .contact-desktop-button {
+    @apply text-lg py-5 px-10;
+  }
+  
+  .contact-desktop-social {
+    @apply w-9 h-9;
+  }
+  
+  .contact-desktop-icon {
+    @apply w-6 h-6;
+  }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .contact-xl {
+    @apply px-10 py-16;
+  }
+  
+  .contact-xl-title {
+    @apply text-5xl mb-16;
+  }
+  
+  .contact-xl-subtitle {
+    @apply text-xl mb-10;
+  }
+  
+  .contact-xl-card {
+    @apply max-w-4xl p-6 rounded-5xl;
+  }
+  
+  .contact-xl-info {
+    @apply text-xl space-y-7;
+  }
+  
+  .contact-xl-form {
+    @apply space-y-6;
+  }
+  
+  .contact-xl-input {
+    @apply text-xl py-5;
+  }
+  
+  .contact-xl-button {
+    @apply text-xl py-6 px-12;
+  }
+  
+  .contact-xl-social {
+    @apply w-10 h-10;
+  }
+  
+  .contact-xl-icon {
+    @apply w-7 h-7;
+  }
+}
+
+/* 2XL Devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .contact-2xl {
+    @apply px-12 py-20;
+  }
+  
+  .contact-2xl-title {
+    @apply text-6xl mb-20;
+  }
+  
+  .contact-2xl-subtitle {
+    @apply text-2xl mb-12;
+  }
+  
+  .contact-2xl-card {
+    @apply max-w-5xl p-8 rounded-6xl;
+  }
+  
+  .contact-2xl-info {
+    @apply text-2xl space-y-8;
+  }
+  
+  .contact-2xl-form {
+    @apply space-y-7;
+  }
+  
+  .contact-2xl-input {
+    @apply text-2xl py-6;
+  }
+  
+  .contact-2xl-button {
+    @apply text-2xl py-7 px-14;
+  }
+  
+  .contact-2xl-social {
+    @apply w-12 h-12;
+  }
+  
+  .contact-2xl-icon {
+    @apply w-8 h-8;
+  }
+}
+
+/* 3XL Devices (ultra large desktops, 1920px and up) */
+@media (min-width: 1920px) {
+  .contact-3xl {
+    @apply px-16 py-24;
+  }
+  
+  .contact-3xl-title {
+    @apply text-7xl mb-24;
+  }
+  
+  .contact-3xl-subtitle {
+    @apply text-3xl mb-14;
+  }
+  
+  .contact-3xl-card {
+    @apply max-w-6xl p-10 rounded-7xl;
+  }
+  
+  .contact-3xl-info {
+    @apply text-3xl space-y-10;
+  }
+  
+  .contact-3xl-form {
+    @apply space-y-8;
+  }
+  
+  .contact-3xl-input {
+    @apply text-3xl py-7;
+  }
+  
+  .contact-3xl-button {
+    @apply text-3xl py-8 px-16;
+  }
+  
+  .contact-3xl-social {
+    @apply w-14 h-14;
+  }
+  
+  .contact-3xl-icon {
+    @apply w-9 h-9;
+  }
+}
+
+/* 4XL Devices (4K and ultra-wide displays, 2560px and up) */
+@media (min-width: 2560px) {
+  .contact-4xl {
+    @apply px-20 py-28;
+  }
+  
+  .contact-4xl-title {
+    @apply text-8xl mb-28;
+  }
+  
+  .contact-4xl-subtitle {
+    @apply text-4xl mb-16;
+  }
+  
+  .contact-4xl-card {
+    @apply max-w-7xl p-12 rounded-8xl;
+  }
+  
+  .contact-4xl-info {
+    @apply text-4xl space-y-12;
+  }
+  
+  .contact-4xl-form {
+    @apply space-y-10;
+  }
+  
+  .contact-4xl-input {
+    @apply text-4xl py-8;
+  }
+  
+  .contact-4xl-button {
+    @apply text-4xl py-10 px-20;
+  }
+  
+  .contact-4xl-social {
+    @apply w-16 h-16;
+  }
+  
+  .contact-4xl-icon {
+    @apply w-10 h-10;
+  }
+}
+
+/* Contact Form Grid Responsive */
+@media (max-width: 575px) {
+  .contact-form-grid {
+    @apply grid-cols-1;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .contact-form-grid {
+    @apply grid-cols-2;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form-grid {
+    @apply grid-cols-2;
+  }
+}
+
+/* Contact Section Touch Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .contact-touch {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  .contact-touch-button {
+    @apply py-4 px-6 text-lg;
+  }
+  
+  .contact-touch-input {
+    @apply py-4 text-lg;
+  }
+  
+  .contact-touch-social {
+    @apply w-12 h-12;
+  }
+}
+
+/* Contact Section High DPI Support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .contact-retina {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Contact Section Print Styles */
+@media print {
+  .contact-print {
+    @apply bg-white text-black;
+  }
+  
+  .contact-print .contact-bg {
+    @apply hidden;
+  }
+  
+  .contact-print .contact-social {
+    @apply hidden;
+  }
+  
+  .contact-print .contact-form {
+    @apply border border-gray-300;
+  }
+}
+
+/* Utility Classes for Common Responsive Patterns */
+.responsive-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6;
+}
+
+.responsive-text {
+  @apply text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+}
+
+.responsive-spacing {
+  @apply p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16;
+}
+
+.responsive-gap {
+  @apply gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12;
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+  
+  .print-break {
+    page-break-before: always;
+  }
+  
+  .print-avoid-break {
+    page-break-inside: avoid;
+  }
+}
+
+/* High DPI / Retina Display Support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .retina-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .dark-mode-auto {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .motion-safe {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .high-contrast {
+    @apply border-2 border-black;
+  }
+}
+
+/* Footer Responsive Styles */
+/* Mobile First Approach for Footer */
+
+/* Extra Small Devices (phones, 320px and up) */
+@media (min-width: 320px) {
+  .footer-mobile {
+    @apply flex flex-col space-y-6 px-4 py-8;
+  }
+  
+  .footer-mobile-brand {
+    @apply text-center;
+  }
+  
+  .footer-mobile-logo {
+    @apply max-w-[200px] h-[60px] mx-auto;
+  }
+  
+  .footer-mobile-description {
+    @apply text-sm leading-5;
+  }
+  
+  .footer-mobile-section {
+    @apply text-center space-y-3;
+  }
+  
+  .footer-mobile-section-title {
+    @apply text-base font-bold;
+  }
+  
+  .footer-mobile-links {
+    @apply space-y-2;
+  }
+  
+  .footer-mobile-link {
+    @apply text-sm;
+  }
+  
+  .footer-mobile-newsletter {
+    @apply order-last;
+  }
+  
+  .footer-mobile-email-container {
+    @apply max-w-[180px] mx-auto;
+  }
+  
+  .footer-mobile-subscribe-container {
+    @apply max-w-[140px] mx-auto;
+  }
+  
+  .footer-mobile-social {
+    @apply flex justify-center space-x-3;
+  }
+  
+  .footer-mobile-social-icon {
+    @apply w-5 h-5;
+  }
+  
+  .footer-mobile-copyright {
+    @apply text-center text-xs;
+  }
+}
+
+/* Small Devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .footer-sm {
+    @apply px-6 py-10;
+  }
+  
+  .footer-sm-logo {
+    @apply max-w-[250px] h-[75px];
+  }
+  
+  .footer-sm-description {
+    @apply text-base leading-6;
+  }
+  
+  .footer-sm-section-title {
+    @apply text-lg;
+  }
+  
+  .footer-sm-link {
+    @apply text-base;
+  }
+  
+  .footer-sm-email-container {
+    @apply max-w-[220px];
+  }
+  
+  .footer-sm-subscribe-container {
+    @apply max-w-[170px];
+  }
+  
+  .footer-sm-social-icon {
+    @apply w-6 h-6;
+  }
+  
+  .footer-sm-copyright {
+    @apply text-sm;
+  }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .footer-tablet {
+    @apply grid grid-cols-2 gap-8 px-8 py-12;
+    grid-template-areas: 
+      "brand newsletter"
+      "links languages"
+      "copyright social";
+  }
+  
+  .footer-tablet-brand {
+    grid-area: brand;
+    @apply text-left;
+  }
+  
+  .footer-tablet-logo {
+    @apply max-w-[280px] h-[85px] mx-0;
+  }
+  
+  .footer-tablet-description {
+    @apply text-lg leading-7;
+  }
+  
+  .footer-tablet-section {
+    @apply text-left space-y-4;
+  }
+  
+  .footer-tablet-section-title {
+    @apply text-xl;
+  }
+  
+  .footer-tablet-links {
+    @apply space-y-3;
+  }
+  
+  .footer-tablet-link {
+    @apply text-base;
+  }
+  
+  .footer-tablet-newsletter {
+    grid-area: newsletter;
+  }
+  
+  .footer-tablet-email-container {
+    @apply max-w-[240px] mx-0;
+  }
+  
+  .footer-tablet-subscribe-container {
+    @apply max-w-[180px] mx-0;
+  }
+  
+  .footer-tablet-social {
+    grid-area: social;
+    @apply flex justify-end;
+  }
+  
+  .footer-tablet-copyright {
+    grid-area: copyright;
+    @apply text-left text-base;
+  }
+}
+
+/* Large Devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .footer-desktop {
+    @apply grid grid-cols-4 gap-8 xl:gap-12 2xl:gap-16 px-16 py-16;
+    grid-template-areas: 
+      "brand links languages newsletter"
+      "brand links languages newsletter"
+      "brand links languages newsletter"
+      "copyright copyright social social";
+  }
+  
+  .footer-desktop-brand {
+    grid-area: brand;
+    @apply text-left;
+  }
+  
+  .footer-desktop-logo {
+    @apply max-w-[295px] h-[90px] mx-0;
+  }
+  
+  .footer-desktop-description {
+    @apply text-lg leading-7;
+  }
+  
+  .footer-desktop-section {
+    @apply text-left space-y-4;
+  }
+  
+  .footer-desktop-section-title {
+    @apply text-xl;
+  }
+  
+  .footer-desktop-links {
+    @apply space-y-3;
+  }
+  
+  .footer-desktop-link {
+    @apply text-base;
+  }
+  
+  .footer-desktop-newsletter {
+    grid-area: newsletter;
+  }
+  
+  .footer-desktop-email-container {
+    @apply max-w-[253px] mx-0;
+  }
+  
+  .footer-desktop-subscribe-container {
+    @apply max-w-[190px] mx-0;
+  }
+  
+  .footer-desktop-social {
+    grid-area: social;
+    @apply flex justify-end;
+  }
+  
+  .footer-desktop-copyright {
+    grid-area: copyright;
+    @apply text-left text-base;
+  }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .footer-xl {
+    @apply px-20 py-20;
+  }
+  
+  .footer-xl-logo {
+    @apply max-w-[320px] h-[95px];
+  }
+  
+  .footer-xl-description {
+    @apply text-xl leading-8;
+  }
+  
+  .footer-xl-section-title {
+    @apply text-2xl;
+  }
+  
+  .footer-xl-link {
+    @apply text-lg;
+  }
+  
+  .footer-xl-email-container {
+    @apply max-w-[280px];
+  }
+  
+  .footer-xl-subscribe-container {
+    @apply max-w-[210px];
+  }
+  
+  .footer-xl-copyright {
+    @apply text-lg;
+  }
+}
+
+/* 2XL Devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .footer-2xl {
+    @apply px-24 py-24;
+  }
+  
+  .footer-2xl-logo {
+    @apply max-w-[350px] h-[100px];
+  }
+  
+  .footer-2xl-description {
+    @apply text-2xl leading-9;
+  }
+  
+  .footer-2xl-section-title {
+    @apply text-3xl;
+  }
+  
+  .footer-2xl-link {
+    @apply text-xl;
+  }
+  
+  .footer-2xl-email-container {
+    @apply max-w-[300px];
+  }
+  
+  .footer-2xl-subscribe-container {
+    @apply max-w-[230px];
+  }
+  
+  .footer-2xl-copyright {
+    @apply text-xl;
+  }
+}
+
+/* 3XL Devices (ultra large desktops, 1920px and up) */
+@media (min-width: 1920px) {
+  .3xl\:text-2xl { font-size: 1.5rem; }
+  .3xl\:text-3xl { font-size: 1.875rem; }
+  .3xl\:text-4xl { font-size: 2.25rem; }
+  .3xl\:text-5xl { font-size: 3rem; }
+  .3xl\:text-6xl { font-size: 3.75rem; }
+  .3xl\:text-7xl { font-size: 4.5rem; }
+  .3xl\:text-8xl { font-size: 6rem; }
+  .3xl\:px-12 { padding-left: 3rem; padding-right: 3rem; }
+  .3xl\:px-14 { padding-left: 3.5rem; padding-right: 3.5rem; }
+  .3xl\:px-16 { padding-left: 4rem; padding-right: 4rem; }
+  .3xl\:px-18 { padding-left: 4.5rem; padding-right: 4.5rem; }
+  .3xl\:px-20 { padding-left: 5rem; padding-right: 5rem; }
+  .3xl\:py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+  .3xl\:py-14 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .3xl\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+  .3xl\:py-18 { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+  .3xl\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+  .3xl\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+  .3xl\:py-28 { padding-top: 7rem; padding-bottom: 7rem; }
+  .3xl\:py-32 { padding-top: 8rem; padding-bottom: 8rem; }
+  .3xl\:gap-10 { gap: 2.5rem; }
+  .3xl\:gap-12 { gap: 3rem; }
+  .3xl\:gap-14 { gap: 3.5rem; }
+  .3xl\:gap-16 { gap: 4rem; }
+  .3xl\:space-x-8 > * + * { margin-left: 2rem; }
+  .3xl\:space-x-10 > * + * { margin-left: 2.5rem; }
+  .3xl\:space-x-12 > * + * { margin-left: 3rem; }
+  .3xl\:space-y-8 > * + * { margin-top: 2rem; }
+  .3xl\:space-y-10 > * + * { margin-top: 2.5rem; }
+  .3xl\:space-y-12 > * + * { margin-top: 3rem; }
+  .3xl\:space-y-14 > * + * { margin-top: 3.5rem; }
+  .3xl\:space-y-16 > * + * { margin-top: 4rem; }
+  .3xl\:mb-8 { margin-bottom: 2rem; }
+  .3xl\:mb-10 { margin-bottom: 2.5rem; }
+  .3xl\:mb-12 { margin-bottom: 3rem; }
+  .3xl\:mb-14 { margin-bottom: 3.5rem; }
+  .3xl\:mb-16 { margin-bottom: 4rem; }
+  .3xl\:mb-20 { margin-bottom: 5rem; }
+  .3xl\:mb-24 { margin-bottom: 6rem; }
+  .3xl\:mb-28 { margin-bottom: 7rem; }
+  .3xl\:mb-32 { margin-bottom: 8rem; }
+  .3xl\:w-10 { width: 2.5rem; }
+  .3xl\:h-10 { height: 2.5rem; }
+  .3xl\:w-12 { width: 3rem; }
+  .3xl\:h-12 { height: 3rem; }
+  .3xl\:w-14 { width: 3.5rem; }
+  .3xl\:h-14 { height: 3.5rem; }
+  .3xl\:w-16 { width: 4rem; }
+  .3xl\:h-16 { height: 4rem; }
+  .3xl\:w-18 { width: 4.5rem; }
+  .3xl\:h-18 { height: 4.5rem; }
+  .3xl\:max-w-4xl { max-width: 56rem; }
+  .3xl\:max-w-5xl { max-width: 64rem; }
+  .3xl\:max-w-6xl { max-width: 72rem; }
+  .3xl\:max-w-7xl { max-width: 80rem; }
+  .3xl\:max-w-8xl { max-width: 88rem; }
+  .3xl\:rounded-4xl { border-radius: 2rem; }
+  .3xl\:rounded-5xl { border-radius: 2.5rem; }
+  .3xl\:rounded-6xl { border-radius: 3rem; }
+  .3xl\:rounded-7xl { border-radius: 3.5rem; }
+  .3xl\:pt-6 { padding-top: 1.5rem; }
+  .3xl\:pt-8 { padding-top: 2rem; }
+  .3xl\:pt-10 { padding-top: 2.5rem; }
+  .3xl\:pt-12 { padding-top: 3rem; }
+  .3xl\:pt-14 { padding-top: 3.5rem; }
+  .3xl\:pt-16 { padding-top: 4rem; }
+  .3xl\:mt-1 { margin-top: 0.25rem; }
+  .3xl\:mt-1\.5 { margin-top: 0.375rem; }
+  .3xl\:mt-2 { margin-top: 0.5rem; }
+  .3xl\:leading-8 { line-height: 2rem; }
+  .3xl\:leading-9 { line-height: 2.25rem; }
+  .3xl\:leading-10 { line-height: 2.5rem; }
+  .3xl\:tracking-\[4px\] { letter-spacing: 4px; }
+  .3xl\:tracking-\[-1px\] { letter-spacing: -1px; }
+  
+  .footer-3xl {
+    @apply px-32 py-32;
+  }
+  
+  .footer-3xl-logo {
+    @apply max-w-[400px] h-[110px];
+  }
+  
+  .footer-3xl-description {
+    @apply text-3xl leading-10;
+  }
+  
+  .footer-3xl-section-title {
+    @apply text-4xl;
+  }
+  
+  .footer-3xl-link {
+    @apply text-2xl;
+  }
+  
+  .footer-3xl-email-container {
+    @apply max-w-[350px];
+  }
+  
+  .footer-3xl-subscribe-container {
+    @apply max-w-[260px];
+  }
+  
+  .footer-3xl-copyright {
+    @apply text-2xl;
+  }
+}
+
+/* 4XL Devices (4K and ultra-wide displays, 2560px and up) */
+@media (min-width: 2560px) {
+  .4xl\:text-3xl { font-size: 1.875rem; }
+  .4xl\:text-4xl { font-size: 2.25rem; }
+  .4xl\:text-5xl { font-size: 3rem; }
+  .4xl\:text-6xl { font-size: 3.75rem; }
+  .4xl\:text-7xl { font-size: 4.5rem; }
+  .4xl\:text-8xl { font-size: 6rem; }
+  .4xl\:text-9xl { font-size: 8rem; }
+  .4xl\:px-14 { padding-left: 3.5rem; padding-right: 3.5rem; }
+  .4xl\:px-16 { padding-left: 4rem; padding-right: 4rem; }
+  .4xl\:px-18 { padding-left: 4.5rem; padding-right: 4.5rem; }
+  .4xl\:px-20 { padding-left: 5rem; padding-right: 5rem; }
+  .4xl\:px-22 { padding-left: 5.5rem; padding-right: 5.5rem; }
+  .4xl\:px-24 { padding-left: 6rem; padding-right: 6rem; }
+  .4xl\:py-14 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .4xl\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+  .4xl\:py-18 { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+  .4xl\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+  .4xl\:py-22 { padding-top: 5.5rem; padding-bottom: 5.5rem; }
+  .4xl\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+  .4xl\:py-28 { padding-top: 7rem; padding-bottom: 7rem; }
+  .4xl\:py-32 { padding-top: 8rem; padding-bottom: 8rem; }
+  .4xl\:py-36 { padding-top: 9rem; padding-bottom: 9rem; }
+  .4xl\:gap-12 { gap: 3rem; }
+  .4xl\:gap-14 { gap: 3.5rem; }
+  .4xl\:gap-16 { gap: 4rem; }
+  .4xl\:gap-18 { gap: 4.5rem; }
+  .4xl\:space-x-10 > * + * { margin-left: 2.5rem; }
+  .4xl\:space-x-12 > * + * { margin-left: 3rem; }
+  .4xl\:space-x-14 > * + * { margin-left: 3.5rem; }
+  .4xl\:space-y-10 > * + * { margin-top: 2.5rem; }
+  .4xl\:space-y-12 > * + * { margin-top: 3rem; }
+  .4xl\:space-y-14 > * + * { margin-top: 3.5rem; }
+  .4xl\:space-y-16 > * + * { margin-top: 4rem; }
+  .4xl\:space-y-18 > * + * { margin-top: 4.5rem; }
+  .4xl\:mb-10 { margin-bottom: 2.5rem; }
+  .4xl\:mb-12 { margin-bottom: 3rem; }
+  .4xl\:mb-14 { margin-bottom: 3.5rem; }
+  .4xl\:mb-16 { margin-bottom: 4rem; }
+  .4xl\:mb-18 { margin-bottom: 4.5rem; }
+  .4xl\:mb-20 { margin-bottom: 5rem; }
+  .4xl\:mb-24 { margin-bottom: 6rem; }
+  .4xl\:mb-28 { margin-bottom: 7rem; }
+  .4xl\:mb-32 { margin-bottom: 8rem; }
+  .4xl\:w-12 { width: 3rem; }
+  .4xl\:h-12 { height: 3rem; }
+  .4xl\:w-14 { width: 3.5rem; }
+  .4xl\:h-14 { height: 3.5rem; }
+  .4xl\:w-16 { width: 4rem; }
+  .4xl\:h-16 { height: 4rem; }
+  .4xl\:w-18 { width: 4.5rem; }
+  .4xl\:h-18 { height: 4.5rem; }
+  .4xl\:w-20 { width: 5rem; }
+  .4xl\:h-20 { height: 5rem; }
+  .4xl\:max-w-5xl { max-width: 64rem; }
+  .4xl\:max-w-6xl { max-width: 72rem; }
+  .4xl\:max-w-7xl { max-width: 80rem; }
+  .4xl\:max-w-8xl { max-width: 88rem; }
+  .4xl\:max-w-9xl { max-width: 96rem; }
+  .4xl\:rounded-5xl { border-radius: 2.5rem; }
+  .4xl\:rounded-6xl { border-radius: 3rem; }
+  .4xl\:rounded-7xl { border-radius: 3.5rem; }
+  .4xl\:rounded-8xl { border-radius: 4rem; }
+  .4xl\:pt-8 { padding-top: 2rem; }
+  .4xl\:pt-10 { padding-top: 2.5rem; }
+  .4xl\:pt-12 { padding-top: 3rem; }
+  .4xl\:pt-14 { padding-top: 3.5rem; }
+  .4xl\:pt-16 { padding-top: 4rem; }
+  .4xl\:pt-18 { padding-top: 4.5rem; }
+  .4xl\:mt-1 { margin-top: 0.25rem; }
+  .4xl\:mt-1\.5 { margin-top: 0.375rem; }
+  .4xl\:mt-2 { margin-top: 0.5rem; }
+  .4xl\:mt-2\.5 { margin-top: 0.625rem; }
+  .4xl\:leading-9 { line-height: 2.25rem; }
+  .4xl\:leading-10 { line-height: 2.5rem; }
+  .4xl\:tracking-\[4px\] { letter-spacing: 4px; }
+  .4xl\:tracking-\[-1px\] { letter-spacing: -1px; }
+}
+
+/* Footer Animation and Interaction Styles */
+.footer-link-hover {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+.footer-link-hover:hover {
+  @apply text-brand-purple;
+}
+
+.footer-social-hover {
+  @apply transition-opacity duration-300 ease-in-out;
+}
+
+.footer-social-hover:hover {
+  @apply opacity-70;
+}
+
+.footer-subscribe-hover {
+  @apply transition-opacity duration-300 ease-in-out;
+}
+
+.footer-subscribe-hover:hover {
+  @apply opacity-90;
+}
+
+/* Footer Focus States for Accessibility */
+.footer-link:focus,
+.footer-social-icon:focus,
+.footer-subscribe-button:focus,
+.footer-email-input:focus {
+  @apply outline-2 outline-offset-2 outline-brand-purple;
+}
+
+/* Footer Print Styles */
+@media print {
+  .footer-container {
+    @apply bg-white text-black;
+  }
+  
+  .footer-bg {
+    @apply hidden;
+  }
+  
+  .footer-social {
+    @apply hidden;
+  }
+  
+  .footer-newsletter {
+    @apply hidden;
+  }
+  
+  .footer-copyright {
+    @apply text-black opacity-100;
+  }
+}
+
+/* Footer Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .footer-dark-mode {
+    @apply bg-gray-900 text-white;
+  }
+  
+  .footer-dark-mode .footer-email-input {
+    @apply bg-gray-800 text-white placeholder-gray-400;
+  }
+  
+  .footer-dark-mode .footer-email-input-bg {
+    @apply bg-gray-800;
+  }
+}
+
+/* Footer Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .footer-link-hover,
+  .footer-social-hover,
+  .footer-subscribe-hover {
+    @apply transition-none;
+  }
+}
+
+/* Footer High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .footer-high-contrast {
+    @apply border-2 border-white;
+  }
+  
+  .footer-high-contrast .footer-link {
+    @apply border-b border-white;
+  }
+  
+  .footer-high-contrast .footer-social-icon {
+    @apply border border-white rounded;
+  }
+}

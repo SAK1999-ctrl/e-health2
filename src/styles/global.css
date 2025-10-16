@@ -1,0 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+  @apply leading-[normal] m-0;
+}
+
+@layer base {
+  *, *::before, *::after {
+    border-width: 0;
+  }
+}
+
+/* Global styles and utilities */
+.gradient-primary {
+  background: linear-gradient(90deg, #3d1687, #7c48b9);
+}
+
+.gradient-secondary {
+  background: linear-gradient(94.83deg, #ee663c 1.92%, #f19022);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #7186ff 11%, #fe7587);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shadow-custom {
+  box-shadow: 9px 15px 10px -2px rgba(59, 136, 244, 0.15);
+}
+
+/* Sponsor scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+/* Pause animation on hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

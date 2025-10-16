@@ -1,0 +1,8 @@
+@layer components {
+    .modal {
+      @apply fixed inset-0 flex items-center justify-center bg-black/60;
+    }
+    .modal-panel {
+      @apply card max-w-lg w-full;
+    }
+  }

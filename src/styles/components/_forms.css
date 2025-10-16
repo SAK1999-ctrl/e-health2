@@ -1,0 +1,8 @@
+@layer components {
+    .form-label {
+      @apply text-sm text-neutral-300;
+    }
+    .form-help {
+      @apply text-xs text-neutral-400 mt-1;
+    }
+  }

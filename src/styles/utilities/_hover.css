@@ -1,0 +1,12 @@
+/* Hover effect utilities */
+.hover-lift {
+  @apply transition-transform hover:scale-105;
+}
+
+.hover-fade {
+  @apply transition-opacity hover:opacity-80;
+}
+
+.hover-glow {
+  @apply transition-all hover:shadow-lg;
+}

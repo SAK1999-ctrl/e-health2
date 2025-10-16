@@ -1,0 +1,12 @@
+/* Button component styles */
+.btn-primary {
+  @apply rounded-[50px] gradient-primary border-white border-solid border-[1px] text-white font-semibold transition-all hover:scale-105;
+}
+
+.btn-secondary {
+  @apply rounded-[50px] gradient-secondary border-darkorange border-solid border-[1px] text-white font-semibold transition-all hover:scale-105;
+}
+
+.btn-outline {
+  @apply rounded-[40px] border-white border-solid border-[1px] text-white font-medium transition-all hover:bg-white hover:text-gray-300;
+}

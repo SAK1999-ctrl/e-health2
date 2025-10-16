@@ -1,0 +1,223 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  "content": [
+      "./src/**/*.{js,jsx,ts,tsx,vue}"
+  ],
+  "theme": {
+      "extend": {
+          "colors": {
+              "white": "#fff",
+              "indigo": {
+                  "100": "#3d1687",
+                  "200": "rgba(61, 22, 135, 0.28)"
+              },
+              "blue": "rgba(115, 0, 255, 0.28)",
+              "darkorange": "#f19022",
+              "gray": {
+                  "100": "#fafafa",
+                  "200": "#8f8f8f",
+                  "300": "#7a7a7a",
+                  "400": "#2c273c",
+                  "500": "#15202e",
+                  "600": "#161b26",
+                  "700": "#171717",
+                  "800": "#0f1012",
+                  "900": "rgba(13, 15, 35, 0.8)",
+                  "1000": "rgba(255, 255, 255, 0.1)",
+                  "1100": "rgba(255, 255, 255, 0.05)",
+                  "1200": "rgba(0, 0, 0, 0.16)",
+                  "1300": "rgba(255, 255, 255, 0.54)",
+                  "1400": "rgba(23, 23, 23, 0.46)",
+                  "1500": "rgba(23, 23, 23, 0.41)",
+                  "1600": "rgba(255, 255, 255, 0.2)"
+              },
+              "royalblue": {
+                  "100": "#7286ff",
+                  "200": "#0069fd"
+              },
+              "cornflowerblue": "#929bff",
+              "gainsboro": "#d9d9d9",
+              "whitesmoke": {
+                  "100": "#f6f6f7",
+                  "200": "#efefef",
+                  "300": "#efefeb",
+                  "400": "rgba(239, 239, 235, 0.8)",
+                  "500": "rgba(239, 239, 235, 0.92)",
+                  "600": "rgba(239, 239, 239, 0.93)"
+              },
+              "dimgray": "#525252",
+              "darkorchid": {
+                  "100": "#c560ff",
+                  "200": "#5d27bc"
+              },
+              "darkslategray": "#202e48",
+              "mediumslateblue": {
+                  "100": "#9863fd",
+                  "200": "#9265ff"
+              },
+              "deeppink": "#ff409e",
+              "black": "#000",
+              "slategray": "#484b6f",
+              "midnightblue": "#181059",
+              "lightslategray": "#8f9bb7"
+          },
+          "spacing": {
+              "num-1440": "1440px",
+              "num-500": "500px",
+              "num-855": "855px",
+              "num-231": "231px",
+              "num-170": "170px",
+              "num-15_9": "15.9px",
+              "num-186_9": "186.9px",
+              "num-347": "347px",
+              "num-551": "551px",
+              "num-267": "267px",
+              "num-93_4": "93.4px",
+              "num-700": "700px",
+              "num-652": "652px",
+              "num-278": "278px",
+              "num-24_5": "24.5px",
+              "num-50": "50px",
+              "num-15_6": "15.6px",
+              "num-29_1": "29.1px",
+              "num-31": "31px",
+              "num-14_2": "14.2px",
+              "num-36_8": "36.8px",
+              "num-55": "55px",
+              "num-1": "1px solid #3d1687"
+          },
+          "fontFamily": {
+              "raleway": "Raleway",
+              "manrope": "Manrope",
+              "noto-sans": "Noto Sans",
+              "dm-sans": "DM Sans",
+              "inter-tight": "Inter Tight",
+              "poppins": "Poppins",
+              "inter": "Inter",
+              "montserrat": "Montserrat",
+              "zapf-dingbats": "Zapf Dingbats"
+          },
+          "borderRadius": {
+              "num-5": "5px",
+              "num-40": "40px",
+              "num-24": "24px",
+              "num-80": "80px",
+              "num-50": "50%",
+              "num-8": "8px",
+              "num-4": "4px"
+          },
+          "padding": {
+              "num-24": "24px"
+          },
+          "opacity": {
+              "num-0_96": "0.96"
+          }
+      },
+      "fontSize": {
+          "num-18": "18px",
+          "num-16": "16px",
+          "num-24": "24px",
+          "num-14": "14px",
+          "num-20": "20px",
+          "num-48": "48px",
+          "num-28": "28px",
+          "num-12": "12px",
+          "num-15": "15px"
+      },
+      "lineHeight": {
+          "num-25": "25px",
+          "num-31_2": "31.2px",
+          "num-20": "20px",
+          "num-24": "24px",
+          "num-32": "32px"
+      },
+      "letterSpacing": {
+          "num-4": "4px",
+          "num--1": "-1px",
+          "num--0_01": "-0.01em"
+      }
+  },
+  "corePlugins": {
+      "preflight": false
+  }
+}
