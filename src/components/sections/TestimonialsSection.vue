@@ -11,13 +11,13 @@
     <div class="absolute top-0 left-0 w-full h-full">
       <!-- Bottom-left background image -->
       <img
-        class="background-image-left absolute bottom-0 left-0 w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[416px] object-cover z-0 opacity-60 lg:opacity-100"
+        class="background-image-left absolute bottom-0 left-0 w-[120px] h-[150px] sm:w-[140px] sm:h-[170px] md:w-[200px] md:h-[250px] lg:w-[275px] lg:h-[350px] object-cover z-0 opacity-60 lg:opacity-100"
         src="/images/Untitled design (14) 1.png"
         alt="Background decoration"
       />
       <!-- Top-right background image -->
       <img
-        class="background-image-right absolute top-0 right-0 w-[200px] h-[200px] md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] object-cover z-0 opacity-60 lg:opacity-100"
+        class="background-image-right absolute top-100 right-0 w-[180px] h-[200px] sm:w-[220px] sm:h-[250px] md:w-[300px] md:h-[400px] lg:w-[275px] lg:h-[350px] xl:w-[350px] xl:h-[400px] object-cover z-0 opacity-60 lg:opacity-100"
         src="/images/Untitled design (13) 1.png"
         alt="Background decoration"
       />
@@ -55,9 +55,9 @@
         >
           <!-- Testimonial Card 1 -->
           <div
-            class="testimonial-card flex-shrink-0 w-full rounded-[20px] bg-gray/80 backdrop-blur-sm p-6 sm:p-8 md:p-12 lg:p-16"
+            class="testimonial-card flex-shrink-0 w-full rounded-[20px] bg-gray/80 backdrop-blur-sm p-6 sm:p-8 md:p-12 lg:p-16 relative"
           >
-            <div class="flex flex-col md:flex-row gap-6 lg:gap-8">
+            <div class="flex flex-col md:flex-row gap-8 lg:gap-10">
               <!-- Doctor's Image -->
               <div class="flex-shrink-0 mx-auto md:mx-0">
                 <div
@@ -65,7 +65,7 @@
                 >
                   <img
                     class="absolute top-0 left-0 rounded-[30px] lg:rounded-[50px] w-full h-full object-cover"
-                    src="/images/Rect10.png"
+                    src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=220&h=260&fit=crop"
                     alt="Dr. Ama Mensah"
                   />
                   <div
@@ -105,9 +105,9 @@
             </div>
           </div>
 
-          <!-- Testimonial Card 2 -->
+          <!-- Testimonial Card 2 --> 
           <div
-            class="testimonial-card flex-shrink-0 w-full rounded-[20px] bg-gray/80 backdrop-blur-sm p-6 sm:p-8 md:p-12 lg:p-16"
+            class="testimonial-card flex-shrink-0 w-full rounded-[20px] bg-gray/80 backdrop-blur-sm p-6 sm:p-8 md:p-12 lg:p-16 relative"
           >
             <div class="flex flex-col md:flex-row gap-6 lg:gap-8">
               <!-- Doctor's Image -->
@@ -159,7 +159,7 @@
 
           <!-- Testimonial Card 3 -->
           <div
-            class="testimonial-card flex-shrink-0 w-full rounded-[20px] bg-gray/80 backdrop-blur-sm p-6 sm:p-8 md:p-12 lg:p-16"
+            class="testimonial-card flex-shrink-0 w-full rounded-[20px] bg-gray/80 backdrop-blur-sm p-6 sm:p-8 md:p-12 lg:p-16 relative"
           >
             <div class="flex flex-col md:flex-row gap-6 lg:gap-8">
               <!-- Doctor's Image -->
@@ -344,10 +344,6 @@ onUnmounted(() => {
   color: #3d1687;
 }
 
-.bg-gray {
-  background-color: #171717;
-}
-
 .border-mediumslateblue {
   border-color: #9863fd;
 }
@@ -370,10 +366,12 @@ onUnmounted(() => {
 
 .background-image-right {
   opacity: 1;
+  right: 0;
+  top: 0;
 }
 
 .background-image-left {
-  transform: translateX(-50px);
+  transform: translateX(-10px);
 }
 
 .background-image-right {
@@ -423,12 +421,13 @@ onUnmounted(() => {
 
   .background-image-left {
     display: block;
-    left: -100px;
+    left: -10px;
   }
 
   .background-image-right {
     display: block;
-    left: calc(100% - 400px);
+    right: 0;
+    left: auto;
   }
 }
 
@@ -444,6 +443,18 @@ onUnmounted(() => {
     height: auto;
     min-height: 513px;
     padding: 2rem;
+  }
+
+  .background-image-left {
+    left: 0;
+    bottom: 0;
+    transform: none;
+  }
+
+  .background-image-right {
+    right: 0;
+    top: 0;
+    transform: none;
   }
 
   .doctor-image {
@@ -492,6 +503,22 @@ onUnmounted(() => {
     padding: 1.5rem;
   }
 
+  .background-image-left {
+    left: 0;
+    bottom: 0;
+    transform: none;
+    width: 100px !important;
+    height: 120px !important;
+  }
+
+  .background-image-right {
+    right: 0;
+    top: 0;
+    transform: none;
+    width: 150px !important;
+    height: 150px !important;
+  }
+
   .doctor-image {
     width: 200px;
     height: 250px;
@@ -519,6 +546,22 @@ onUnmounted(() => {
 @media (max-width: 480px) {
   .testimonial-card {
     padding: 1rem;
+  }
+
+  .background-image-left {
+    left: 0;
+    bottom: 0;
+    transform: none;
+    width: 80px !important;
+    height: 100px !important;
+  }
+
+  .background-image-right {
+    right: 0;
+    top: 0;
+    transform: none;
+    width: 120px !important;
+    height: 120px !important;
   }
 
   .doctor-image {

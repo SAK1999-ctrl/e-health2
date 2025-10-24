@@ -25,7 +25,7 @@
         <p
           class="mb-6 font-raleway text-xs font-semibold uppercase tracking-[0.4em] text-brand-blue sm:text-sm"
         >
-          HubHubsen
+          iSenseHUB
           <br />
           Your Partner in Progress – Smart Solutions, Real Impact
         </p>
@@ -40,7 +40,7 @@
         <p
           class="mx-auto max-w-3xl font-manrope text-base leading-relaxed text-white/85 sm:text-lg lg:text-xl"
         >
-          HubHubsen is more than just software; it's a commitment to a
+          iSenseHUB is more than just software; it's a commitment to a
           healthier, more efficient Africa. We bring you a platform that acts as
           your Resource Multiplier and Operational Lifeline, delivering
           immediate, tangible value.
@@ -51,13 +51,15 @@
       <img
         src="/images/Untitled design (2) 1.png"
         alt="DNA structure background"
-        class="absolute left-0 bottom-40 w-[35vw] max-w-[650px] min-w-[400px] object-contain opacity-80 z-0 pointer-events-none animate-dna-rotate"
+        class="absolute left-[-30px] sm:left-[-10px] md:left-[-40px] lg:left-[-60px] 2xl:left-[-240px] bottom-32 sm:bottom-90 w-[60vw] sm:w-[50vw] md:w-[45vw] lg:w-[40vw] xl:w-[30vw] 2xl:w-[25vw] max-w-[600px] min-w-[200px] sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] object-contain opacity-85 z-0 pointer-events-none animate-dna-subtle-rotate"
+        loading="lazy"
+        decoding="async"
       />
-      <!-- Capsules - positioned in top right area -->
+      <!-- Capsules - positioned on the right side -->
       <img
         src="/images/Untitled design (3) 1.png"
         alt="Capsules background"
-        class="absolute top-[130px] right-[-100px] w-[500px] h-[500px] object-contain opacity-100 z-0 pointer-events-none animate-capsules-float"
+        class="absolute top-[30px] sm:top-[20px] md:top-[40px] lg:top-[120px] right-[-10px] sm:right-[-10px] md:right-[-10px] xl:right-[-110px] 2xl:right-[-260px] w-[150px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[250px] md:h-[300px] lg:w-[300px] lg:h-[350px] xl:w-[350px] xl:h-[400px] 2xl:w-[350px] 2xl:h-[400px] object-contain opacity-60 sm:opacity-60 md:opacity-60 lg:opacity-90 z-[-1] pointer-events-none animate-capsules-float"
       />
       <!-- Features section -->
       <section class="mt-16 lg:mt-20 relative z-20">
@@ -65,46 +67,46 @@
         <div class="block lg:hidden px-4">
           <div class="space-y-6">
             <!-- Feature 1 -->
-            <div class="bg-neutral-900 rounded-xl p-6 flex items-start gap-4">
+            <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center text-center gap-4 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-neutral-800 hover:border hover:border-mediumslateblue/30">
               <div
-                class="rounded-full bg-mediumslateblue w-16 h-16 flex-shrink-0 flex items-center justify-center"
+                class="rounded-full bg-mediumslateblue w-20 h-20 flex-shrink-0 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-mediumslateblue/50"
               >
                 <img
                   src="/src/assets/icons/Group-1.png"
                   alt="Amplify icon"
-                  class="w-10 h-10 object-cover"
+                  class="w-12 h-12 object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div class="flex-1">
-                <h3 class="text-mediumslateblue font-bold text-lg mb-2">
+                <h3 class="text-mediumslateblue font-bold text-lg mb-3 transition-colors duration-300 hover:text-mediumslateblue/80">
                   Amplify Your Experts by 3X
                 </h3>
-                <p class="text-white/85 text-sm leading-relaxed font-manrope">
+                <p class="text-white/85 text-sm leading-relaxed font-manrope transition-colors duration-300 hover:text-white/95">
                   Our cutting-edge AI isn't here to replace, but to empower.
                   Imagine doctors and clinicians freed from administrative
                   burdens, able to focus 3 times more on patient care. That's
-                  the HubHubsen promise – a direct, measurable Return on
+                  the iSenseHUB promise – a direct, measurable Return on
                   Investment for your institution.
                 </p>
               </div>
             </div>
 
             <!-- Feature 2 -->
-            <div class="bg-neutral-900 rounded-xl p-6 flex items-start gap-4">
+            <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center text-center gap-4 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-neutral-800 hover:border hover:border-darkorchid/30">
               <div
-                class="rounded-full bg-darkorchid w-16 h-16 flex-shrink-0 flex items-center justify-center"
+                class="rounded-full bg-darkorchid w-20 h-20 flex-shrink-0 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-darkorchid/50"
               >
                 <img
                   src="/src/assets/icons/Group-2.png"
                   alt="Language icon"
-                  class="w-10 h-10 object-cover"
+                  class="w-12 h-12 object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div class="flex-1">
-                <h3 class="text-darkorchid font-bold text-lg mb-2">
+                <h3 class="text-darkorchid font-bold text-lg mb-3 transition-colors duration-300 hover:text-darkorchid/80">
                   Speak Every Language, Serve Every Community
                 </h3>
-                <p class="text-white/85 text-sm leading-relaxed font-manrope">
+                <p class="text-white/85 text-sm leading-relaxed font-manrope transition-colors duration-300 hover:text-white/95">
                   Africa is rich in languages, and so is HubHubsen. With support
                   for English, French, Portuguese, Spanish, and a total of 9
                   languages at the click of a button, we ensure seamless
@@ -115,23 +117,23 @@
             </div>
 
             <!-- Feature 3 -->
-            <div class="bg-neutral-900 rounded-xl p-6 flex items-start gap-4">
+            <div class="bg-neutral-900 rounded-xl p-6 flex flex-col items-center text-center gap-4 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-neutral-800 hover:border hover:border-deeppink/30">
               <div
-                class="rounded-full bg-deeppink w-16 h-16 flex-shrink-0 flex items-center justify-center"
+                class="rounded-full bg-deeppink w-20 h-20 flex-shrink-0 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-deeppink/50"
               >
                 <img
                   src="/src/assets/icons/Group-3.png"
                   alt="Unified system icon"
-                  class="w-10 h-10 object-cover"
+                  class="w-12 h-12 object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div class="flex-1">
-                <h3 class="text-deeppink font-bold text-lg mb-2">
+                <h3 class="text-deeppink font-bold text-lg mb-3 transition-colors duration-300 hover:text-deeppink/80">
                   A Unified System, Tailored for You
                 </h3>
-                <p class="text-white/85 text-sm leading-relaxed font-manrope">
+                <p class="text-white/85 text-sm leading-relaxed font-manrope transition-colors duration-300 hover:text-white/95">
                   Whether you manage a single clinic, a bustling hospital, or a
-                  network of healthcare facilities, HubHubsen adapts. Our
+                  network of healthcare facilities, iSenseHUB adapts. Our
                   comprehensive system seamlessly integrates patient management,
                   clinical operations, financial oversight, and resource
                   allocation, all in one intuitive platform.
@@ -156,7 +158,7 @@
           <!-- Features card background -->
           <div
             ref="cardBackground"
-            class="absolute top-0 left-0 rounded-[40px] bg-neutral-900 w-[845px] h-[661px] z-10 card-slide-in"
+            class="absolute top-0 left-0 rounded-[40px] bg-neutral-900 w-[820px] h-[661px] z-10 card-slide-in"
           >
             <!-- Feature 1 -->
             <div
@@ -181,7 +183,7 @@
                 Our cutting-edge AI isn't here to replace, but to empower.
                 Imagine doctors and clinicians freed from administrative
                 burdens, able to focus 3 times more on patient care. That's the
-                HubHubsen promise – a direct, measurable Return on Investment
+                iSenseHUB promise – a direct, measurable Return on Investment
                 for your institution.
               </div>
             </div>
@@ -206,7 +208,7 @@
               <div
                 class="absolute top-[53px] left-[181px] text-base leading-5 font-manrope inline-block w-[523px] h-[95px] text-white/85 z-20"
               >
-                Africa is rich in languages, and so is HubHubsen. With support
+                Africa is rich in languages, and so is iSenseHUB. With support
                 for English, French, Portuguese, Spanish, and a total of 9
                 languages at the click of a button, we ensure seamless
                 communication and accessibility for every patient and provider,
@@ -235,7 +237,7 @@
                 class="absolute top-[55px] left-[181px] text-base leading-5 font-manrope inline-block w-[523px] h-[97px] text-white/85 z-20"
               >
                 Whether you manage a single clinic, a bustling hospital, or a
-                network of healthcare facilities, HubHubsen adapts. Our
+                network of healthcare facilities, iSenseHUB adapts. Our
                 comprehensive system seamlessly integrates patient management,
                 clinical operations, financial oversight, and resource
                 allocation, all in one intuitive platform.
@@ -500,83 +502,72 @@ const stats = [
   }
 }
 
-/* DNA Helix Twisting Animation - Physical Double Helix Rotation */
-@keyframes dna-rotate {
+/* DNA Subtle Rotation Animation - More noticeable movements */
+@keyframes dna-subtle-rotate {
   0% {
-    transform: rotateZ(0deg) rotateX(0deg) translateY(0px) scale(1);
+    transform: rotateZ(0deg) translateY(0px) scale(1);
     filter: drop-shadow(0 0 20px rgba(138, 43, 226, 0.3));
   }
-  6.25% {
-    transform: rotateZ(22.5deg) rotateX(2deg) translateY(2px) scale(1.01);
-    filter: drop-shadow(0 0 21px rgba(138, 43, 226, 0.32));
-  }
-  12.5% {
-    transform: rotateZ(45deg) rotateX(5deg) translateY(0px) scale(1.02);
-    filter: drop-shadow(0 0 22px rgba(138, 43, 226, 0.35));
-  }
-  18.75% {
-    transform: rotateZ(67.5deg) rotateX(3deg) translateY(-2px) scale(1.03);
-    filter: drop-shadow(0 0 23px rgba(138, 43, 226, 0.37));
-  }
-  25% {
-    transform: rotateZ(90deg) rotateX(0deg) translateY(0px) scale(1.05);
+  20% {
+    transform: rotateZ(4deg) translateY(-5px) scale(1.02);
     filter: drop-shadow(0 0 25px rgba(138, 43, 226, 0.4));
   }
-  31.25% {
-    transform: rotateZ(112.5deg) rotateX(-2deg) translateY(2px) scale(1.03);
-    filter: drop-shadow(0 0 23px rgba(138, 43, 226, 0.37));
-  }
-  37.5% {
-    transform: rotateZ(135deg) rotateX(-5deg) translateY(0px) scale(1.02);
-    filter: drop-shadow(0 0 22px rgba(138, 43, 226, 0.35));
-  }
-  43.75% {
-    transform: rotateZ(157.5deg) rotateX(-3deg) translateY(-2px) scale(1.01);
-    filter: drop-shadow(0 0 21px rgba(138, 43, 226, 0.32));
-  }
-  50% {
-    transform: rotateZ(180deg) rotateX(0deg) translateY(0px) scale(1.1);
+  40% {
+    transform: rotateZ(2deg) translateY(-8px) scale(1.03);
     filter: drop-shadow(0 0 30px rgba(138, 43, 226, 0.5));
   }
-  56.25% {
-    transform: rotateZ(202.5deg) rotateX(2deg) translateY(2px) scale(1.01);
-    filter: drop-shadow(0 0 21px rgba(138, 43, 226, 0.32));
-  }
-  62.5% {
-    transform: rotateZ(225deg) rotateX(5deg) translateY(0px) scale(1.02);
-    filter: drop-shadow(0 0 22px rgba(138, 43, 226, 0.35));
-  }
-  68.75% {
-    transform: rotateZ(247.5deg) rotateX(3deg) translateY(-2px) scale(1.03);
-    filter: drop-shadow(0 0 23px rgba(138, 43, 226, 0.37));
-  }
-  75% {
-    transform: rotateZ(270deg) rotateX(0deg) translateY(0px) scale(1.05);
+  60% {
+    transform: rotateZ(-2deg) translateY(5px) scale(1.02);
     filter: drop-shadow(0 0 25px rgba(138, 43, 226, 0.4));
   }
-  81.25% {
-    transform: rotateZ(292.5deg) rotateX(-2deg) translateY(2px) scale(1.03);
-    filter: drop-shadow(0 0 23px rgba(138, 43, 226, 0.37));
-  }
-  87.5% {
-    transform: rotateZ(315deg) rotateX(-5deg) translateY(0px) scale(1.02);
+  80% {
+    transform: rotateZ(-4deg) translateY(3px) scale(1.01);
     filter: drop-shadow(0 0 22px rgba(138, 43, 226, 0.35));
   }
-  93.75% {
-    transform: rotateZ(337.5deg) rotateX(-3deg) translateY(-2px) scale(1.01);
-    filter: drop-shadow(0 0 21px rgba(138, 43, 226, 0.32));
-  }
   100% {
-    transform: rotateZ(360deg) rotateX(0deg) translateY(0px) scale(1);
+    transform: rotateZ(0deg) translateY(0px) scale(1);
     filter: drop-shadow(0 0 20px rgba(138, 43, 226, 0.3));
   }
 }
 
-.animate-dna-rotate {
-  animation: dna-rotate 12s linear infinite;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  transform-origin: 35% 50%;
+.animate-dna-subtle-rotate {
+  animation: dna-subtle-rotate 4s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform, filter;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Performance optimizations for different screen sizes */
+@media (max-width: 768px) {
+  .animate-dna-subtle-rotate {
+    animation-duration: 6s; /* Faster but still smooth on mobile */
+    filter: drop-shadow(0 0 15px rgba(138, 43, 226, 0.25)); /* Slightly reduced shadow on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .animate-dna-subtle-rotate {
+    animation-duration: 8s; /* A bit slower on very small screens */
+    filter: drop-shadow(0 0 12px rgba(138, 43, 226, 0.2));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-dna-subtle-rotate {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* High DPI displays optimization */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .animate-dna-subtle-rotate {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
 }
 
 /* Capsules Floating Animation with Shine Effect */
@@ -636,7 +627,7 @@ const stats = [
 }
 
 /* Pause animations on hover for better UX */
-.animate-dna-rotate:hover,
+.animate-dna-subtle-rotate:hover,
 .animate-capsules-float:hover {
   animation-play-state: paused;
 }

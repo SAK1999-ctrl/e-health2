@@ -1,80 +1,78 @@
 <template>
-  <div>
+  <div class="min-h-screen bg-black relative overflow-hidden">
+    <!-- Background Images -->
+    <div class="absolute inset-0 bg-hero-bg bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-hero-overlay bg-cover bg-center"></div>
+    
     <!-- Navigation -->
-    <nav class="relative z-20 px-4 sm:px-6 lg:px-8 py-4 bg-black">
+    <nav class="relative z-10 px-4 sm:px-6 lg:px-8 py-4">
       <TheNavbar />
     </nav>
 
-    <div class="space-y-16">
-      <section :class="$style.hero">
-        <h2 :class="$style.title">Who We Serve</h2>
-        <p :class="$style.subtitle">iSenseHUB For Every Health Facility</p>
-        <p :class="$style.lead">
-          Explore how iSenseHUB serves different healthcare centers, from
-          individual practices to large hospital networks.
+    <!-- Hero Section -->
+    <section class="relative z-10 px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Main Title -->
+        <h1 class="text-white font-raleway font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 lg:mb-6">
+          Who We Serve
+        </h1>
+
+        <!-- Gradient Subtitle -->
+        <h2 class="text-gradient font-raleway font-bold text-2xl sm:text-3xl lg:text-5xl leading-tight mb-6 lg:mb-8 max-w-5xl mx-auto">
+          iSenseHUB For Every Health Facility
+        </h2>
+
+        <!-- Description -->
+        <p class="text-white font-raleway text-lg sm:text-xl lg:text-2xl leading-relaxed mb-8 lg:mb-12 max-w-4xl mx-auto">
+          Equip Your Hospital & Serve Unique Healthcare Centers
         </p>
-        <div :class="$style.actions">
-          <RouterLink to="/contact" class="btn-outline">Contact Us</RouterLink>
-          <RouterLink to="/services" class="btn-primary"
-            >Request a Demo</RouterLink
-          >
+
+        <!-- Categories with Icons -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-8 lg:gap-12 mt-12">
+          <!-- Hospitals -->
+          <div class="flex flex-col items-center group cursor-pointer">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors duration-300">
+              <img src="/images/Untitled design (9) 1.png" alt="Hospital icon" class="w-8 h-8" />
+            </div>
+            <span class="text-white font-raleway font-medium text-lg">Hospitals</span>
+          </div>
+
+          <!-- Clinicians -->
+          <div class="flex flex-col items-center group cursor-pointer">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors duration-300">
+              <img src="/images/Untitled design (10) 1.png" alt="Clinician icon" class="w-8 h-8" />
+            </div>
+            <span class="text-white font-raleway font-medium text-lg">Clinicians</span>
+          </div>
+
+          <!-- Patients -->
+          <div class="flex flex-col items-center group cursor-pointer">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors duration-300">
+              <img src="/images/Untitled design (11) 1.png" alt="Patient icon" class="w-8 h-8" />
+            </div>
+            <span class="text-white font-raleway font-medium text-lg">Patients</span>
+          </div>
         </div>
-      </section>
-
-      <!-- Unique content for this page can be added here as needed -->
-
-      <!-- Reused sections -->
-      <TestimonialsSection />
-      <ContactSection />
-      <TheFooter />
-    </div>
+      </div>
+    </section>
   </div>
+
+  <!-- Reused sections -->
+  <JoinTheMovementSection />
+  <TheFooter />
 </template>
 
 <script setup>
-import { RouterLink } from "vue-router";
 import TheNavbar from "../components/layout/TheNavbar.vue";
-import TestimonialsSection from "../components/sections/TestimonialsSection.vue";
-import ContactSection from "../components/sections/ContactSection.vue";
+import JoinTheMovementSection from "../components/sections/JoinTheMovementSection.vue";
 import TheFooter from "../components/layout/TheFooter.vue";
 </script>
 
-<style module>
-.hero {
-  position: relative;
-  padding: 6rem 1.5rem 2rem;
-  background: linear-gradient(
-    180deg,
-    #9a53d7,
-    #9944cb 19.23%,
-    #c3429a 41.35%,
-    #e23169 56.25%,
-    #e85b2c 72.12%,
-    #e8902c 98.19%
-  );
-  border-radius: 2rem;
-}
-.title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.15;
-}
-.subtitle {
-  margin-top: 0.75rem;
-  font-size: 1.75rem;
-  font-weight: 600;
-  background: linear-gradient(90deg, #7186ff 11%, #fe7587);
+<style scoped>
+.text-gradient {
+  background: linear-gradient(90deg, #7186FF 11%, #FE7587 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.lead {
-  margin-top: 1rem;
-  max-width: 60ch;
-  color: #e5e7eb;
-}
-.actions {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 0.75rem;
+  background-clip: text;
 }
 </style>

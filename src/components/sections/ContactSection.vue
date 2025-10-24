@@ -1,12 +1,24 @@
 <template>
   <div class="contact-section w-full min-h-screen relative overflow-hidden">
     
-    <!-- Background image - Fixed and unchanged -->
-    <div class="absolute inset-0 bg-center bg-no-repeat z-[1]" 
-         style="background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-01/2O2KODYuqC.png');">
-    </div>
     <!-- Background with gradient and decorative elements -->
     <div class="absolute inset-0 bg-gradient-to-br from-pink-500 via-pink-500 to-pink-600"></div>
+    
+    <!-- Decorative floating balls -->
+    <!-- Large ball - top left -->
+    <div class="absolute top-[16%] left-[0%] w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px] xl:w-[200px] xl:h-[200px] 2xl:w-[220px] 2xl:h-[220px] rounded-full animate-float-slow z-[2] ball-gradient-1"></div>
+    
+    <!-- Medium ball - top right -->
+    <div class="absolute top-[20%] right-[-1%] w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[120px] lg:h-[120px] xl:w-[150px] xl:h-[150px] 2xl:w-[170px] 2xl:h-[170px] rounded-full animate-float-medium z-[2] ball-gradient-2"></div>
+    
+    <!-- Small ball - bottom right -->
+    <div class="absolute bottom-[0%] right-[1%] w-[50px] h-[50px] sm:w-[95px] sm:h-[95px] md:w-[100px] md:h-[100px] lg:w-[165px] lg:h-[165px] xl:w-[175px] xl:h-[175px] 2xl:w-[195px] 2xl:h-[195px] rounded-full animate-float-fast z-[2] ball-gradient-3"></div>
+    
+    <!-- Medium ball - b-l -->
+    <div class="absolute bottom-[3%] left-[1%] w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] md:w-[90px] md:h-[90px] lg:w-[115px] lg:h-[115px] xl:w-[130px] xl:h-[130px] 2xl:w-[145px] 2xl:h-[145px] rounded-full animate-float-slow z-[2] ball-gradient-4"></div>
+    
+    <!-- Large ball - middle -->
+    <div class="absolute bottom-[35%] left-[35%] w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[110px] md:h-[110px] lg:w-[140px] lg:h-[140px] xl:w-[160px] xl:h-[160px] 2xl:w-[200px] 2xl:h-[200px] rounded-full animate-float-medium z-[2] ball-gradient-5"></div>
     
     <!-- Content Container -->
     <div class="relative z-10 container mx-auto px-3 xs:px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 3xl:px-20 4xl:px-24 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20 2xl:py-24 3xl:py-28 4xl:py-32">
@@ -22,11 +34,11 @@
       
       <!-- Contact Card -->
       <div class="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
-        <div class="rounded-2xl sm:rounded-3xl lg:rounded-4xl xl:rounded-5xl border border-white/20 p-6 sm:p-8 lg:p-10 xl:p-12">
+        <div class="rounded-2xl sm:rounded-3xl lg:rounded-4xl xl:rounded-5xl border border-white/30 p-5 sm:p-8 lg:p-10 xl:p-20 2xl:p-24 min-h-[600px] sm:min-h-[700px] lg:min-h-[800px] xl:min-h-[900px] glass-effect">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
             
             <!-- Contact Information Section -->
-            <div class="space-y-4 sm:space-y-6 lg:space-y-8 xl:space-y-10">
+            <div class="space-y-6 sm:space-y-8 lg:space-y-10 xl:space-y-12 2xl:space-y-14">
               <h3 class="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold font-raleway text-white mb-6 sm:mb-8">
                 Contact Information
               </h3>
@@ -86,7 +98,7 @@
             </div>
             
             <!-- Contact Form Section -->
-            <div class="space-y-4 sm:space-y-6 lg:space-y-8">
+            <div class="space-y-6 sm:space-y-8 lg:space-y-10 xl:space-y-12 2xl:space-y-14">
               <form class="space-y-4 sm:space-y-6 lg:space-y-8">
                 <!-- First Row: First Name & Organization -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
@@ -362,6 +374,173 @@ textarea::-webkit-scrollbar-thumb {
 
 textarea::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
+}
+
+/* Glassmorphism effect for contact card */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+.glass-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+/* Ball gradient colors matching reference image */
+.ball-gradient-1 {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 50%, #C084FC 100%);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+}
+
+.ball-gradient-2 {
+  background: linear-gradient(135deg, #EC4899 0%, #F472B6 50%, #F9A8D4 100%);
+  box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
+}
+
+.ball-gradient-3 {
+  background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 50%, #93C5FD 100%);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+}
+
+.ball-gradient-4 {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 50%, #DDD6FE 100%);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.25);
+}
+
+.ball-gradient-5 {
+  background: linear-gradient(135deg, #EC4899 0%, #F472B6 50%, #FCE7F3 100%);
+  box-shadow: 0 4px 20px rgba(236, 72, 153, 0.25);
+}
+
+/* Floating ball animations */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-5px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(-15px) translateX(8px) rotate(270deg);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-15px) translateX(-8px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(-8px) translateX(12px) rotate(240deg);
+  }
+}
+
+@keyframes float-fast {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) translateX(6px) rotate(180deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 6s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 4s ease-in-out infinite;
+}
+
+/* Responsive glass effect adjustments */
+@media (max-width: 640px) {
+  .glass-effect {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .glass-effect {
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(255, 255, 255, 0.09);
+  }
+}
+
+@media (min-width: 1025px) {
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Responsive adjustments for floating balls */
+@media (max-width: 640px) {
+  .animate-float-slow,
+  .animate-float-medium,
+  .animate-float-fast {
+    animation-duration: 6s;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .animate-float-slow {
+    animation-duration: 7s;
+  }
+  .animate-float-medium {
+    animation-duration: 5s;
+  }
+  .animate-float-fast {
+    animation-duration: 3.5s;
+  }
+}
+
+@media (min-width: 1025px) {
+  .animate-float-slow {
+    animation-duration: 8s;
+  }
+  .animate-float-medium {
+    animation-duration: 6s;
+  }
+  .animate-float-fast {
+    animation-duration: 4s;
+  }
 }
 </style>
 

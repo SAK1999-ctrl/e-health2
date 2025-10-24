@@ -15,9 +15,9 @@
 
         <!-- See More Button -->
         <button
-          class="rounded-[40px] border-white border-solid border-[1px] overflow-hidden flex items-center justify-center px-6 py-3 text-lg sm:text-xl font-noto-sans cursor-pointer transition-all duration-300 hover:bg-gradient-to-r hover:from-brand-blue hover:to-brand-purple hover:border-transparent hover:shadow-lg hover:scale-105"
+          class="rounded-[30px] sm:rounded-[35px] md:rounded-[40px] border-white border-solid border-[1px] overflow-hidden flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-sm sm:text-base md:text-lg lg:text-xl font-noto-sans cursor-pointer transition-all duration-300 hover:bg-gradient-to-r hover:from-brand-blue hover:to-brand-purple hover:border-transparent hover:shadow-lg hover:scale-105"
         >
-          <span class="relative tracking-[0.03em] capitalize font-medium">
+          <span class="relative tracking-[0.02em] sm:tracking-[0.025em] md:tracking-[0.03em] capitalize font-medium">
             See More
           </span>
         </button>
@@ -50,12 +50,7 @@
             class="self-stretch flex-1 relative rounded-num-24 bg-gray-100 overflow-hidden"
           >
             <img
-              class="absolute top-[-315px] left-[-437px] w-[1213px] h-[804px] object-cover"
-              src="/images/image 13.png"
-              alt="Make Appointment"
-            />
-            <img
-              class="absolute top-[-51px] left-[-105px] w-[550px] h-[277px] object-cover"
+              class="w-full h-full object-cover object-center"
               src="/images/image 13.png"
               alt="Make Appointment"
             />
@@ -111,12 +106,7 @@
             class="self-stretch flex-1 relative rounded-num-24 bg-gray-100 overflow-hidden"
           >
             <img
-              class="absolute top-[-315px] left-[-436px] w-[1213px] h-[804px] object-cover"
-              src="/images/image14.png"
-              alt="Virtual Consultation"
-            />
-            <img
-              class="absolute top-[-72px] left-[-253px] w-[740px] h-[493px] object-cover"
+              class="w-full h-full object-cover object-center"
               src="/images/image14.png"
               alt="Virtual Consultation"
             />

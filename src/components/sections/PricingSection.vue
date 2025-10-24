@@ -6,7 +6,7 @@
     >
       <!-- Background gradient images - Responsive positioning -->
       <img
-        class="absolute top-[200px] left-[1000px] w-[367.4px] h-[367.4px] object-cover opacity-90 hidden xl:block"
+        class="absolute top-[200px] right-[0px] w-[367.4px] h-[367.4px] object-cover opacity-90 hidden xl:block"
         src="/images/Untitled design 1.png"
         alt="Background gradient 1"
         style="
@@ -26,22 +26,31 @@
 
       <!-- Mobile/Tablet background images -->
       <img
-        class="absolute top-[100px] right-[20px] w-[200px] h-[200px] object-cover opacity-60 block xl:hidden"
+        class="absolute top-[100px] right-[-20px] w-[200px] h-[200px] object-cover opacity-60 block xl:hidden"
         src="/images/Untitled design 1.png"
         alt="Background gradient mobile 1"
       />
       <img
-        class="absolute bottom-[100px] left-[20px] w-[180px] h-[180px] object-cover opacity-60 block xl:hidden"
+        class="absolute bottom-[100px] left-[-20px] w-[180px] h-[180px] object-cover opacity-60 block xl:hidden"
         src="/images/Untitled design (11) 1.png"
         alt="Background gradient mobile 2"
       />
 
-      <!-- Dot pattern overlay -->
-      <div class="absolute inset-0">
-        <DotPattern :use-tailwind="false" color="#929BFF" :opacity="0.3" />
-      </div>
+    <!-- Dot Pattern Overlays - Top -->
+    <div
+      class="absolute top-[0px] left-[85%] transform -translate-x-1/2 z-[2] hidden sm:block"
+    >
+      <DotPattern :use-tailwind="false" color="#929BFF" :opacity="1" />
     </div>
 
+    <!-- Mobile Dot Pattern - Smaller and repositioned -->
+    <div
+      class="absolute top-[20px] right-[20px] z-[3] block sm:hidden mobile-dot-pattern"
+    >
+      <DotPattern :use-tailwind="false" color="#929BFF" :opacity="0.95" />
+    </div>
+    </div>
+ 
     <!-- Main content -->
     <div class="relative z-10 px-4 py-8 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
       <!-- Header -->
@@ -62,12 +71,12 @@
         </div>
 
         <h1
-          class="text-cornflowerblue text-lg sm:text-2xl md:text-4xl lg:text-6xl mb-2 font-raleway"
+          class="text-cornflowerblue text-4xl sm:text-4xl md:text-6xl lg:text-4xl mb-2 font-raleway"
         >
           Pricing
         </h1>
         <h1
-          class="text-white text-2xl sm:text-4xl md:text-6xl lg:text-4xl xl:text-5xl mb-2 sm:mb-6 font-raleway"
+          class="text-white text-4xl sm:text-4xl md:text-6xl lg:text-4xl xl:text-5xl mb-2 sm:mb-6 font-raleway"
         >
           License & Pricing
         </h1>
@@ -82,7 +91,7 @@
               class="text-sm sm:text-base font-raleway"
               :class="{
                 'text-black font-bold': !isYearly,
-                'text-white': isYearly,
+                'text-black': isYearly,
               }"
               >Monthly</span
             >
@@ -1187,6 +1196,44 @@ button {
 
   .pricing-section .text-gray-500 {
     color: #9ca3af !important;
+  }
+}
+/* Make DotPattern vertical for this section */
+.dot-vertical {
+  transform: rotate(90deg) translateY(-8px);
+  transform-origin: top right;
+  /* Reduce the visual size slightly to fit the header */
+  scale: 0.9;
+}
+
+/* Better control on smaller screens */
+@media (max-width: 1024px) {
+  .dot-vertical {
+    right: 12px !important;
+    top: 8px !important;
+    transform: rotate(90deg) translateY(-6px) scale(0.75);
+  }
+}
+
+/* Mobile dot pattern responsive styles */
+.mobile-dot-pattern {
+  transform: scale(0.4);
+  transform-origin: top right;
+}
+
+@media (max-width: 480px) {
+  .mobile-dot-pattern {
+    transform: scale(0.3);
+    top: 10px !important;
+    right: 10px !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .mobile-dot-pattern {
+    transform: scale(0.5);
+    top: 15px !important;
+    right: 15px !important;
   }
 }
 </style>

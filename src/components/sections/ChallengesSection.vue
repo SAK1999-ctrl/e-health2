@@ -12,22 +12,30 @@
     <!-- Background overlay images with responsive positioning -->
     <!-- Left background image - visible on all screens -->
     <div
-      class="w-[80px] h-[100px] sm:w-[120px] sm:h-[150px] md:w-[150px] md:h-[200px] lg:w-[180px] lg:h-[250px] xl:w-[310px] xl:h-[450px] 2xl:w-[500px] 2xl:h-[500px] absolute top-[80px] sm:top-[100px] lg:top-[110px] left-0 z-[1] animate-float-left"
-      style="background: url('/images/Untitled design (10) 1.png') 50% / cover no-repeat; aspect-ratio: 1/1; filter: sepia(0.8) saturate(0.8) hue-rotate(250deg) brightness(1) opacity: 0.6;"
+      class="w-[100px] h-[120px] sm:w-[100px] sm:h-[120px] md:w-[130px] md:h-[160px] lg:w-[180px] lg:h-[250px] xl:w-[310px] xl:h-[450px] 2xl:w-[350px] 2xl:h-[500px] absolute top-[60px] sm:top-[80px] md:top-[90px] lg:top-[110px] z-[1] animate-float-left"
+      style="background: url('/images/Untitled design (10) 1.png') center / contain no-repeat; aspect-ratio: 1/1; filter: brightness(1) sepia(0.5) saturate(0.1) hue-rotate(146deg) contrast(1) drop-shadow(0 0 20px rgba(146, 155, 255, 0.3)); opacity: 0.95; left: -80 !important;"
     ></div>
 
     <!-- Right background image - visible on all screens -->
     <div
-      class="w-[70px] h-[90px] sm:w-[110px] sm:h-[140px] md:w-[140px] md:h-[180px] lg:w-[165px] lg:h-[220px] xl:w-[290px] xl:h-[450px] 2xl:w-[500px] 2xl:h-[500px] absolute top-[120px] sm:top-[150px] lg:top-[200px] right-0 z-[1] animate-float-right"
-      style="background: url('/images/Untitled design (12) 1.png') 50% / cover no-repeat; aspect-ratio: 1/1; filter: sepia(0.7) saturate(0.8) hue-rotate(250deg) brightness(1) opacity: 0.6;"
+      class="w-[60px] h-[70px] sm:w-[90px] sm:h-[110px] md:w-[120px] md:h-[150px] lg:w-[165px] lg:h-[220px] xl:w-[290px] xl:h-[450px] 2xl:w-[500px] 2xl:h-[600px] absolute top-[100px] sm:top-[120px] md:top-[140px] lg:top-[200px] right-0 z-[1] animate-float-right"
+      style="background: url('/images/Untitled design (12) 1.png') 50% / cover no-repeat; aspect-ratio: 1/1; filter: brightness(1) sepia(0.5) saturate(0.1) hue-rotate(146deg) contrast(1) drop-shadow(0 0 20px rgba(146, 155, 255, 0.3)); opacity: 0.95;"
     ></div>
 
     <!-- Dot Pattern Overlays - Top -->
     <div
-      class="absolute top-[-12px] left-[85%] transform -translate-x-1/2 z-[2]"
+      class="absolute top-[-12px] left-[85%] transform -translate-x-1/2 z-[2] hidden sm:block"
     >
       <DotPattern :use-tailwind="false" color="#929BFF" :opacity="0.9" />
     </div>
+
+    <!-- Mobile Dot Pattern - Smaller and repositioned -->
+    <div
+      class="absolute top-[20px] right-[20px] z-[3] block sm:hidden mobile-dot-pattern"
+    >
+      <DotPattern :use-tailwind="false" color="#929BFF" :opacity="0.95" />
+    </div>
+    
 
     <!-- Mobile Layout -->
     <div class="block lg:hidden">
@@ -299,13 +307,13 @@ const challenges = [
     transform: translateY(0px) translateX(0px) rotateY(0deg);
   }
   25% {
-    transform: translateY(-10px) translateX(5px) rotateY(2deg);
+    transform: translateY(-10px) translateX(5px) rotateY(-2deg);
   }
   50% {
     transform: translateY(-5px) translateX(-3px) rotateY(-1deg);
   }
   75% {
-    transform: translateY(-15px) translateX(8px) rotateY(1deg);
+    transform: translateY(-6px) translateX(-8px) rotateY(-1deg);
   }
 }
 
@@ -326,7 +334,7 @@ const challenges = [
 }
 
 .animate-float-left {
-  animation: float-left 8s ease-in-out infinite;
+  animation: float-left 10s ease-in-out infinite;
 }
 
 .animate-float-right {
@@ -358,7 +366,18 @@ const challenges = [
   /* Ensure background images are visible but subtle on mobile */
   .challenges-container .animate-float-left,
   .challenges-container .animate-float-right {
-    opacity: 0.3;
+    opacity: 0.4;
+  }
+
+  /* Mobile background image positioning adjustments */
+  .challenges-container .animate-float-left {
+    left: -40px !important;
+    top: 50px !important;
+  }
+
+  .challenges-container .animate-float-right {
+    right: -20px !important;
+    top: 80px !important;
   }
 
   /* Mobile card spacing */
@@ -407,6 +426,21 @@ const challenges = [
   }
 }
 
+/* Tablet-specific styles */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .challenges-container .animate-float-left {
+    left: -40px !important;
+    top: 70px !important;
+    opacity: 0.5;
+  }
+
+  .challenges-container .animate-float-right {
+    right: -5px !important;
+    top: 100px !important;
+    opacity: 0.5;
+  }
+}
+
 /* Desktop-specific styles */
 @media (min-width: 1024px) {
   .challenges-container {
@@ -433,6 +467,33 @@ const challenges = [
 @media (min-width: 1920px) {
   .challenges-container {
     min-height: 1200px;
+  }
+}
+
+/* Ensure left image always starts from left edge */
+.challenges-container .animate-float-left {
+  left: -20px !important;
+}
+
+/* Mobile dot pattern responsive styles */
+.mobile-dot-pattern {
+  transform: scale(0.4);
+  transform-origin: top right;
+}
+
+@media (max-width: 480px) {
+  .mobile-dot-pattern {
+    transform: scale(0.3);
+    top: 10px !important;
+    right: 10px !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .mobile-dot-pattern {
+    transform: scale(0.5);
+    top: 15px !important;
+    right: 15px !important;
   }
 }
 </style>

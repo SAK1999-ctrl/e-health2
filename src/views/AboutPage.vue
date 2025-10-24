@@ -1,19 +1,21 @@
 <template>
   <div class="homepage">
-    <HeroSection />
+    <AboutHeroSection />
     <AboutUsSection />
-    <JoinUsSection />
+    <servicesSection />
     <TestimonialsSection />
-    <FAQSection />
+    <ContactSection />
+    <JoinTheMovementSection />
     <TheFooter />
   </div>
 </template>
 
 <script setup lang="ts">
-import HeroSection from "../components/sections/HeroSection.vue";
+import AboutHeroSection from "../components/sections/AboutHeroSection.vue";
 import AboutUsSection from "../components/sections/AboutUsSection.vue";
-import JoinUsSection from "../components/sections/JoinUsSection.vue";
+import servicesSection from "../components/sections/servicesSection.vue";
 import TestimonialsSection from "../components/sections/TestimonialsSection.vue";
-import FAQSection from "../components/sections/FAQSection.vue";
+import ContactSection from "../components/sections/ContactSection.vue";
+import JoinTheMovementSection from "../components/sections/JoinTheMovementSection.vue";
 import TheFooter from "../components/layout/TheFooter.vue";
 </script>

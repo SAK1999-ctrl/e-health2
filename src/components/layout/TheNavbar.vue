@@ -74,7 +74,7 @@
             to="/"
             class="text-heading-dark font-raleway font-medium px-6 py-2 hover:text-primary-purple transition-colors"
             >Home</RouterLink
-          >
+          > 
           <RouterLink
             to="/features"
             class="text-heading-dark font-raleway font-medium px-6 py-2 hover:text-primary-purple transition-colors"
@@ -123,32 +123,36 @@
         <!-- Request Demo Button -->
         <div class="relative">
           <div class="p-1 bg-opacity-28">
-            <button
-              class="bg-purple-gradient text-white font-raleway font-bold text-lg px-8 py-4 rounded-full hover:shadow-xl transition-shadow"
+            <a
+              href="https://ehealth.isensehub.ai/auth/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-purple-gradient text-white font-raleway font-bold text-lg px-8 py-4 rounded-full hover:shadow-xl transition-shadow inline-block"
               style="
                 position: relative;
                 overflow: hidden;
                 transition: all 0.4s ease;
                 z-index: 1;
               "
-              @click="scrollToContact"
               @mouseover="handleButtonHover"
               @mouseout="handleButtonOut"
             >
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
       <!-- Mobile CTA -->
       <div class="sm:hidden">
-        <RouterLink
-          to="/contact"
+        <a
+          href="https://ehealth.isensehub.ai/auth/login"
+          target="_blank"
+          rel="noopener noreferrer"
           class="bg-purple-gradient text-white font-raleway font-bold text-sm px-4 py-2 rounded-full inline-block"
         >
           Demo
-        </RouterLink>
+        </a>
       </div>
     </div>
 
@@ -294,18 +298,7 @@ const closeMenus = () => {
   isMobileMenuOpen.value = false;
 };
 
-const scrollToContact = () => {
-  // If we're on the home page, scroll to contact section
-  if (router.currentRoute.value.path === "/") {
-    const contactSection = document.querySelector("#contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  } else {
-    // Otherwise navigate to contact page
-    router.push("/contact");
-  }
-};
+// Removed scrollToContact function as Get Started now links to login page
 
 const handleButtonHover = (event: Event) => {
   const target = event.target as HTMLElement;

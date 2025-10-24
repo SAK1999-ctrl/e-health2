@@ -3,15 +3,15 @@
     <!-- Main background with seamless gradient transition -->
     <div class="absolute inset-0 bg-gradient-to-b from-purple-600 to-purple-500">
       <!-- Background blur effect -->
-      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1440px] h-[1133px] [filter:blur(50px)] rounded-[60%] bg-gray-400 opacity-90"></div>
+      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1340px] h-[963px] [filter:blur(50px)] rounded-[60%] bg-gray-400 opacity-90"></div>
       
       <!-- Background images with proper responsive positioning and color adjustments -->
       <!-- Large decorative image on the right -->
       <img 
-        class="absolute top-[200px] right-[-100px] w-[600px] h-[600px] object-contain opacity-60 hidden lg:block" 
+        class="absolute top-[240px] right-[-100px] w-[500px] h-[500px] object-contain opacity-60 hidden lg:block" 
         src="/images/Untitled design (9) 1.png" 
         alt="Background decorative large" 
-        style="filter: sepia(1) saturate(0.9) hue-rotate(280deg) brightness(1.3) opacity(0.9);"
+        style="filter: sepia(1.2) saturate(1.6) hue-rotate(270deg) contrast(1.6) brightness(1.8) opacity(1);"
       />
       
       <!-- Heart image on the left -->
@@ -19,34 +19,38 @@
         class="absolute top-[200px] left-[-80px] w-[400px] h-[400px] object-contain opacity-70 hidden lg:block" 
         src="/images/Untitled design (15) 1.png" 
         alt="Heart decorative" 
-        style="filter: sepia(1.2) saturate(1.2) hue-rotate(300deg) brightness(1.8) opacity(0.9);"
+        style="filter: sepia(1.2) saturate(1.6) hue-rotate(270deg) contrast(1.6) brightness(1.8) opacity(1);"
       />
       
       <!-- Mobile/Tablet background images -->
       <img 
-        class="absolute top-[50px] right-[20px] w-[200px] h-[200px] object-contain opacity-50 block lg:hidden" 
+        class="absolute top-[50px] right-[-30px] w-[200px] h-[200px] object-contain opacity-50 block lg:hidden" 
         src="/images/Untitled design (9) 1.png" 
         alt="Background decorative mobile" 
-        style="filter: sepia(0.9) saturate(1.1) hue-rotate(280deg) brightness(1.2) opacity(0.9);"
+        style="filter: sepia(1.4) saturate(1.1) hue-rotate(270deg) contrast(1.6) brightness(1.2) opacity(1);"
       />
       <img 
-        class="absolute bottom-[50px] left-[20px] w-[150px] h-[150px] object-contain opacity-50 block lg:hidden" 
+        class="absolute bottom-[50px] left-[-30px] w-[150px] h-[150px] object-contain opacity-50 block lg:hidden" 
         src="/images/Untitled design (15) 1.png" 
         alt="Heart decorative mobile" 
-        style="filter: sepia(0.6) saturate(1.8) hue-rotate(300deg) brightness(1.1) opacity(0.5);"
+        style="filter: sepia(1.6) saturate(1.1) hue-rotate(270deg) contrast(1.6) brightness(1.1) opacity(1);"
       />
       
       <!-- Dot pattern overlay -->
-      <div class="absolute inset-0">
-        <DotPattern :use-tailwind="false" color="#929BFF" :opacity="0.9" />
+      <div class="absolute top-60 right-5 dot-vertical">
+        <DotPattern :use-tailwind="false" color="#929BFF" :opacity="1"/>
       </div>
     </div>
-    
+
+      <!-- Dot pattern overlay for form area -->
+      <div class="absolute top-4 left-0">
+        <DotPattern :use-tailwind="false" color="#929BFF" :opacity="1" />
+      </div>    
     <!-- Main content container -->
     <div class="relative z-10 container mx-auto px-4 py-8 lg:py-16 xl:py-16">
       <div class="max-w-5xl mx-auto">
         <!-- Main card container -->
-        <div class="relative bg-gray-300/50 shadow-[0px_0px_49px_-2px_rgba(0,_0,_0,_0.19)] [backdrop-filter:blur(27.18px)] rounded-[30px] lg:rounded-[60px] overflow-hidden">
+        <div class="relative bg-gray-300/5 shadow-[0px_0px_49px_-2px_rgba(0,_0,_0,_0.19)] [backdrop-filter:blur(27.18px)] rounded-[30px] lg:rounded-[60px] overflow-hidden">
           <div class="grid lg:grid-cols-2">
             <!-- Left panel with gradient background - Hidden on mobile, visible on desktop -->
             <div class="hidden lg:flex relative p-8 lg:p-12 xl:p-16 flex-col justify-center min-h-[717px]">
@@ -71,6 +75,9 @@
                 style="filter: sepia(0.8) saturate(1.2) hue-rotate(320deg) brightness(1.0) opacity(0.6);"
               />
               
+              <!-- Gradient ball decoration -->
+              <div class="gradient-ball absolute bottom-5 left-2 w-800 h-800 lg:w-1500 lg:h-1500 xl:w-2500 xl:h-2500 rounded-full opacity-75 animate-pulse"></div>
+              
               <!-- Text content -->
               <div class="relative z-10 text-white">
                 <div class="text-sm lg:text-base xl:text-lg font-raleway opacity-80 mb-0 leading-none">join us</div>
@@ -85,10 +92,6 @@
             
             <!-- Right panel with form -->
             <div class="p-4 sm:p-6 lg:p-8 xl:p-12 backdrop-blur-sm relative" style="background-color: rgba(66, 39, 84, 0.2);">
-              <!-- Dot pattern overlay for form area -->
-              <div class="absolute top-4 right-4 opacity-20">
-                <DotPattern :use-tailwind="false" color="#929BFF" :opacity="0.4" />
-              </div>
               <div class="max-w-lg mx-auto relative z-10">
                 <!-- Form title -->
                 <div class="text-center mb-4 lg:mb-6">
@@ -273,7 +276,7 @@
                   <!-- Submit button -->
                   <button 
                     type="submit"
-                    class="w-2/4 mx-auto bg-[#492291] text-white font-semibold py-2 px-4 rounded-full hover:bg-gradient-to-r hover:from-[#492291] hover:to-white hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-raleway"
+                    class="w-full sm:w-3/4 md:w-2/3 lg:w-2/4 mx-auto bg-[#492291] text-white font-semibold py-2.5 px-4 sm:py-3 sm:px-6 md:py-3 md:px-8 text-sm sm:text-base md:text-lg rounded-full hover:bg-gradient-to-r hover:from-[#492291] hover:to-white hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg font-raleway"
                     style="background: linear-gradient(135deg, #492291 0%, #492291 70%, rgba(255,255,255,0.1) 100%);"
                   >
                     Register Hospital
@@ -816,4 +819,126 @@ const handleSubmit = () => {
     color: #d1d5db !important;
   }
 }
+/* Make DotPattern vertical for this section */
+.dot-vertical {
+  transform: rotate(90deg) translateY(-8px);
+  transform-origin: top right;
+  /* Reduce the visual size slightly to fit the header */
+  scale: 0.9;
+}
+
+/* Better control on smaller screens */
+@media (max-width: 1024px) {
+  .dot-vertical {
+    right: 12px !important;
+    top: 8px !important;
+    transform: rotate(90deg) translateY(-6px) scale(0.75);
+  }
+}
+
+/* Gradient ball styling */
+.gradient-ball {
+  background: linear-gradient(135deg, 
+    #E84192 5%, 
+    #E44748 5%, 
+    #8B5CF6 25%, 
+    #A855F7 40%, 
+    #C084FC 55%, 
+    #F0ABFC 70%, 
+    #F8BBD9 85%, 
+    #E84192 100%);
+  box-shadow: 
+    0 0 40px rgba(232, 65, 146, 0.4),
+    0 0 80px rgba(139, 92, 246, 0.3),
+    0 0 120px rgba(240, 171, 252, 0.2),
+    inset 0 0 30px rgba(255, 255, 255, 0.2);
+  animation: gradientPulse 4s ease-in-out infinite alternate;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: blur(20px);
+  z-index: 1;
+}
+
+.gradient-ball:hover {
+  transform: scale(1.05);
+  filter: blur(12px);
+  box-shadow: 
+    0 0 60px rgba(232, 65, 146, 0.6),
+    0 0 120px rgba(139, 92, 246, 0.4),
+    0 0 180px rgba(240, 171, 252, 0.3),
+    inset 0 0 40px rgba(255, 255, 255, 0.3);
+  animation-duration: 2s;
+}
+
+@keyframes gradientPulse {
+  0% {
+    box-shadow: 
+      0 0 40px rgba(232, 65, 146, 0.4),
+      0 0 80px rgba(139, 92, 246, 0.3),
+      0 0 120px rgba(240, 171, 252, 0.2),
+      inset 0 0 30px rgba(255, 255, 255, 0.2);
+    transform: scale(1);
+    filter: blur(8px);
+  }
+  100% {
+    box-shadow: 
+      0 0 60px rgba(232, 65, 146, 0.6),
+      0 0 120px rgba(139, 92, 246, 0.4),
+      0 0 180px rgba(240, 171, 252, 0.3),
+      inset 0 0 40px rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+    filter: blur(10px);
+  }
+}
+
+/* Responsive gradient ball adjustments */
+@media (max-width: 640px) {
+  .gradient-ball {
+    width: 200px;
+    height: 200px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    filter: blur(6px);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .gradient-ball {
+    width: 130px;
+    height: 130px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    filter: blur(7px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gradient-ball {
+    width: 250px;
+    height: 250px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    filter: blur(10px);
+  }
+}
+
+@media (min-width: 1025px) {
+  .gradient-ball {
+    width: 200px;
+    height: 200px;
+    bottom: 4rem;
+    right: 1.25rem;
+    filter: blur(10px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .gradient-ball {
+    width: 200px;
+    height: 200px;
+    bottom: 4rem;
+    right: 1.25rem;
+    filter: blur(10px);
+  }
+}
+
 </style>
