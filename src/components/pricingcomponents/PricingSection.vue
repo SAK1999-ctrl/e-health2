@@ -1,7 +1,13 @@
 <template>
-  <section class="py-12 sm:py-20 px-4 bg-gradient-to-b from-slate-900 to-slate-800">
+  <section class="py-12 sm:py-20 px-4" style="background-color: #291f58;">
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col items-center mb-8 sm:mb-12">
+        <h2 class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center mb-4 sm:mb-6 max-w-6xl mx-auto leading-tight px-4">
+          Accessible Pricing, Uncompromised Features
+        </h2>
+        <p class="text-[#9ca0a4] text-lg sm:text-xl md:text-2xl text-center max-w-4xl mx-auto mb-8 sm:mb-12 md:mb-16 px-4">
+          Every plan includes our full suite of powerful features. Simply choose the capacity that fits your facility's scale.
+        </p>
         <div class="inline-flex items-center gap-2 px-4 sm:px-6 py-3 rounded-full border-2 border-teal-400/50 bg-slate-800/50 backdrop-blur mb-6 sm:mb-8">
           <span class="text-teal-400 font-semibold text-sm sm:text-base">Early Bird Offer:</span>
           <span class="text-white font-bold text-sm sm:text-base">40% OFF</span>
@@ -66,7 +72,7 @@ const plans = [
     baseGHS: 14400,
     originalBaseGHS: 24000,
     clinicians: 'Up to 50 Clinicians',
-    color: 'from-purple-400 to-purple-500',
+    color: 'from-purple-300 to-purple-500',
     popular: false,
   },
   {
@@ -80,7 +86,7 @@ const plans = [
     baseGHS: 28080,
     originalBaseGHS: 46800,
     clinicians: 'Up to 100 Clinicians',
-    color: 'from-cyan-400 to-cyan-500',
+    color: 'from-cyan-300 to-cyan-500',
     popular: false,
   },
   {
@@ -108,7 +114,7 @@ const plans = [
     baseGHS: 126000,
     originalBaseGHS: 210000,
     clinicians: 'Up to 500 Clinicians',
-    color: 'from-blue-400 to-blue-500',
+    color: 'from-sky-300 to-sky-500',
     popular: false,
   },
   {
@@ -122,7 +128,7 @@ const plans = [
     baseGHS: 230400,
     originalBaseGHS: 384000,
     clinicians: '1000+ Clinicians',
-    color: 'from-teal-400 to-teal-500',
+    color: 'from-teal-300 to-teal-500',
     popular: false,
     isEnterprise: true,
   },

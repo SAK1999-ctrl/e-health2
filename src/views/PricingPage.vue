@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-slate-900">
+  <div class="min-h-screen">
     <!-- Navigation -->
     <nav class="relative z-20 px-4 sm:px-6 lg:px-8 py-4">
       <TheNavbar />
