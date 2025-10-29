@@ -1,7 +1,7 @@
 <template>
   <div class="w-full relative min-h-screen py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 text-center text-white font-raleway overflow-hidden">
     <!-- Background gradient -->
-    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-pink-500 via-purple-400 to-pink-500"></div>
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-pink-500 via-purple-400 to-pink-400"></div>
     
     <!-- Blurred orbs for depth -->
     <div class="absolute top-0 left-0 w-full h-full">

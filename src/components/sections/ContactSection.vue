@@ -2,7 +2,7 @@
   <div class="contact-section w-full min-h-screen relative overflow-hidden">
     
     <!-- Background with gradient and decorative elements -->
-    <div class="absolute inset-0 bg-gradient-to-br from-pink-500 via-pink-500 to-pink-600"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-pink-400 via-pink-400 to-pink-500"></div>
     
     <!-- Decorative floating balls -->
     <!-- Large ball - top left -->

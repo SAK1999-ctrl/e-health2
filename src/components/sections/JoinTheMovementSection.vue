@@ -2,7 +2,7 @@
   <div class="main-container w-full min-h-screen relative mx-auto my-0">
     <!-- Background gradient -->
     <div class="w-full h-full absolute top-0 left-0" 
-         style="background: linear-gradient(to bottom, #e84192, #E44748);">
+         style="background: linear-gradient(to bottom, #ec499a, #E44748);">
       <!-- Starry details -->
       <div class="absolute inset-0 opacity-70">
         <div class="absolute top-5 left-4 sm:top-8 sm:left-8 md:top-12 md:left-12 lg:top-16 lg:left-16 xl:top-20 xl:left-20 w-1 h-1 bg-white rounded-full animate-pulse"></div>

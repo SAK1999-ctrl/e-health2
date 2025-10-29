@@ -27,6 +27,27 @@
       <div class="geometric-shape shape-3"></div>
     </div>
 
+    <!-- Floating Healthcare Icons -->
+    <div class="absolute inset-0 healthcare-icons">
+
+
+      <!-- Stethoscope Image Icon -->
+      <div class="health-icon icon-stethoscope">
+        <img src="/images/stethoscope.png" alt="Stethoscope" class="floating-image" />
+      </div>
+
+
+      <!-- Telemedical Image Icon -->
+      <div class="health-icon icon-telemedical">
+        <img src="/images/telemedical.png" alt="Telemedicine" class="floating-image" />
+      </div>
+
+      <!-- Time Pill Image Icon -->
+      <div class="health-icon icon-time-pill">
+        <img src="/images/timee.png" alt="Medication Time" class="floating-image" />
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="relative z-50 px-4 sm:px-6 lg:px-8 py-4">
       <TheNavbar />
@@ -287,6 +308,108 @@ import CTAButton from "../common/CTAButton.vue";
   animation: geometricRotate 30s linear infinite;
 }
 
+/* Healthcare Icons Container */
+.healthcare-icons {
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.health-icon {
+  position: absolute;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  animation: iconFloat 15s ease-in-out infinite;
+  /* 3D Transform Effects */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+/* 3D Hover Effects */
+.health-icon:hover {
+  transform: translateZ(20px) scale(1.1);
+}
+
+/* Add depth with multiple shadows */
+.health-icon svg {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4))
+          drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2))
+          drop-shadow(0 2px 4px rgba(255, 255, 255, 0.3));
+}
+
+/* Image Icons */
+.icon-stethoscope {
+  top: 77%;
+  right: 30%;
+  animation-duration: 21s;
+  animation-delay: -2.5s;
+  transform: rotateY(-6deg) rotateX(-3deg);
+}
+
+.icon-telemedical {
+  top: 38%;
+  right: 2%;
+  animation-duration: 15s;
+  animation-delay: -1.5s;
+  transform: rotateY(-18deg) rotateX(8deg);
+}
+
+.icon-time-pill {
+  top: 60%;
+  left: 5%;
+  animation-duration: 17s;
+  animation-delay: -3s;
+  transform: rotateY(12deg) rotateX(-6deg);
+}
+
+.floating-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
+/* Base sizes (1537px - 1920px) */
+.icon-stethoscope .floating-image {
+  max-width: 200px;
+  max-height: 200px;
+  filter: drop-shadow(0 6px 12px rgba(59, 130, 246, 0.4));
+}
+
+.icon-telemedical .floating-image {
+  max-width: 240px;
+  max-height: 240px;
+  filter: drop-shadow(0 8px 16px rgba(113, 134, 255, 0.4));
+}
+
+.icon-time-pill .floating-image {
+  max-width: 120px;
+  max-height: 120px;
+  filter: drop-shadow(0 6px 12px rgba(236, 72, 153, 0.4));
+}
+
+/* Icon Floating Animation with 3D Effects */
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate3d(20px, -30px, 15px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(-15px, -20px, -10px);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translate3d(10px, -40px, 20px);
+    opacity: 0.85;
+  }
+}
+
 .shape-1 {
   width: 60px;
   height: 60px;
@@ -375,8 +498,175 @@ button:hover::before {
   }
 }
 
-/* Responsive Effects */
-@media (max-width: 768px) {
+/* Responsive Effects - Image Icons */
+
+/* Ultra Large Desktop (4K: > 2560px) */
+@media (min-width: 2561px) {
+  .icon-stethoscope .floating-image {
+    max-width: 280px;
+    max-height: 280px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 340px;
+    max-height: 340px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 170px;
+    max-height: 170px;
+  }
+
+  .icon-stethoscope {
+    top: 77%;
+    right: 30%;
+  }
+
+  .icon-telemedical {
+    top: 38%;
+    right: 2%;
+  }
+
+  .icon-time-pill {
+    top: 60%;
+    left: 5%;
+  }
+}
+
+/* Very Large Desktop (1920px - 2560px) */
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .icon-stethoscope .floating-image {
+    max-width: 240px;
+    max-height: 240px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 290px;
+    max-height: 290px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 145px;
+    max-height: 145px;
+  }
+
+  .icon-stethoscope {
+    top: 60%;
+    right: 30%;
+  }
+
+  .icon-telemedical {
+    top: 34%;
+    right: 5%;
+  }
+
+  .icon-time-pill {
+    top: 50%;
+    left: 12%;
+  }
+}
+
+/* Standard Large Desktop (1537px - 1919px) - Override to ensure base styles apply */
+@media (min-width: 1537px) and (max-width: 1919px) {
+  .icon-stethoscope .floating-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 240px;
+    max-height: 240px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .icon-stethoscope {
+    top: 67%;
+    right: 30%;
+  }
+
+  .icon-telemedical {
+    top: 38%;
+    right: 4%;
+  }
+
+  .icon-time-pill {
+    top: 50%;
+    left: 7%;
+  }
+}
+
+/* Large Desktop (1281px - 1536px) */
+@media (min-width: 1281px) and (max-width: 1536px) {
+  .icon-stethoscope .floating-image {
+    max-width: 170px;
+    max-height: 170px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .icon-stethoscope {
+    top: 78%;
+    right: 28%;
+  }
+
+  .icon-telemedical {
+    top: 35%;
+    right: 3%;
+  }
+
+  .icon-time-pill {
+    top: 50%;
+    left: 7%;
+  } 
+}
+
+/* Desktop (1024px - 1280px) */
+@media (max-width: 1280px) {
+  .icon-stethoscope .floating-image {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 180px;
+    max-height: 180px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  .icon-stethoscope {
+    top: 80%;
+    right: 24%;
+  }
+
+  .icon-telemedical {
+    top: 40%;
+    right: 2%;
+  }
+
+  .icon-time-pill {
+    top: 50%;
+    left: 4%;
+  }
+}
+
+/* Tablet Large (768px - 1024px) */
+@media (max-width: 1024px) {
   .particle {
     animation-duration: 12s;
   }
@@ -389,13 +679,196 @@ button:hover::before {
   .wave-layer-2 {
     animation-duration: 20s;
   }
+
+  .icon-stethoscope .floating-image {
+    max-width: 130px;
+    max-height: 130px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 160px;
+    max-height: 160px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .icon-stethoscope {
+    top: 80%;
+    right: 22%;
+  }
+
+  .icon-telemedical {
+    top: 32%;
+    right: 2%;
+  }
+
+  .icon-time-pill {
+    top: 45%;
+    left: 7%;
+  }
+
+  /* Smaller icons on tablet */
+  .health-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Tablet (640px - 768px) */
+@media (max-width: 768px) {
+  .icon-stethoscope .floating-image {
+    max-width: 130px;
+    max-height: 130px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 140px;
+    max-height: 140px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  .icon-stethoscope {
+    top: 80%;
+    right: 15%;
+  }
+
+  .icon-telemedical {
+    top: 21%;
+    right: 4%;
+  }
+
+  .icon-time-pill {
+    top: 52%;
+    left: 4%;
+  }
+
+}
+
+/* Mobile Large (480px - 640px) */
+@media (max-width: 640px) {
+  .icon-stethoscope .floating-image {
+    max-width: 110px;
+    max-height: 110px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 65px;
+    max-height: 65px;
+  }
+
+  .icon-stethoscope {
+    top: 78%;
+    right: 8%;
+  }
+
+  .icon-telemedical {
+    top: 22%;
+    right: 6%;
+  }
+
+  .icon-time-pill {
+    top: 48%;
+    left: 2%;
+  }
+}
+
+/* Mobile Small (< 480px) */
+@media (max-width: 480px) {
+  /* Even smaller on very small screens */
+  .health-icon {
+    opacity: 0.7;
+  }
+
+  .icon-stethoscope .floating-image {
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 55px;
+    max-height: 55px;
+  }
+
+  .icon-stethoscope {
+    top: 80%;
+    right: 6%;
+  }
+
+  .icon-telemedical {
+    top: 18%;
+    right: 5%;
+  }
+
+  .icon-time-pill {
+    top: 48%;
+    left: 5%;
+  }
+
+  .icon-telemedical {
+    opacity: 0.6;
+  }
+}
+
+/* Extra Small Mobile (< 375px) */
+@media (max-width: 375px) {
+  .icon-stethoscope .floating-image {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .icon-telemedical .floating-image {
+    max-width: 75px;
+    max-height: 75px;
+  }
+
+  .icon-time-pill .floating-image {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .icon-stethoscope {
+    top: 80%;
+    right: 5%;
+  }
+
+  .icon-telemedical {
+    top: 15%;
+    right: 3%;
+  }
+
+  .icon-time-pill {
+    top: 45%;
+    left: 3%;
+  }
+
+  .health-icon {
+    opacity: 0.5;
+  }
 }
 
 /* Performance Optimizations */
 .particle,
 .geometric-shape,
 .bg-rotation,
-.overlay-rotation {
+.overlay-rotation,
+.health-icon {
   will-change: transform;
 }
 
@@ -406,7 +879,8 @@ button:hover::before {
   .wave-layer-1,
   .wave-layer-2,
   .bg-rotation,
-  .overlay-rotation {
+  .overlay-rotation,
+  .health-icon {
     animation: none;
   }
 }
