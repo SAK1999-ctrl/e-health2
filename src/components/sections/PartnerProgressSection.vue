@@ -107,7 +107,7 @@
                   Speak Every Language, Serve Every Community
                 </h3>
                 <p class="text-white/85 text-sm leading-relaxed font-manrope transition-colors duration-300 hover:text-white/95">
-                  Africa is rich in languages, and so is HubHubsen. With support
+                  Africa is rich in languages, and so is iSenseHUB. With support
                   for English, French, Portuguese, Spanish, and a total of 9
                   languages at the click of a button, we ensure seamless
                   communication and accessibility for every patient and

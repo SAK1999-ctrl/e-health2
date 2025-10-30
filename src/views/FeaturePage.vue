@@ -74,7 +74,7 @@
 
       <!-- Other sections -->
       <ChallengesSection />
-      <servicesSection />
+      <ServicesSection />
       <TestimonialsSection />
       <FAQSection />
       <JoinTheMovementSection />
@@ -87,7 +87,7 @@
 import { RouterLink } from 'vue-router'
 import TheNavbar from '../components/layout/TheNavbar.vue'
 import ChallengesSection from "../components/sections/ChallengesSection.vue";
-import servicesSection from "../components/sections/servicesSection.vue";
+import ServicesSection from "../components/sections/ServicesSection.vue";
 import TestimonialsSection from '../components/sections/TestimonialsSection.vue'
 import FAQSection from '../components/sections/FAQSection.vue'
 import JoinTheMovementSection from '../components/sections/JoinTheMovementSection.vue'
